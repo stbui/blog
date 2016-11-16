@@ -1,0 +1,11 @@
+<section class="layout-wrap">
+    <div class="layout-title">
+        <span><%= __('menu.'+page.title) %></span>
+    </div>
+    <div class="layout-wrap-inner">
+        <% if(site.tags.length) { %>
+            <div class="custom-tags"><%- list_tags({show_count:false}) %></div>
+        <% } %>
+        
+    </div>
+</section>
