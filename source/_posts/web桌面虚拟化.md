@@ -1,7 +1,8 @@
 ---
 title: web桌面虚拟化
 date: 2016-10-20 12:54:12
-tags:
+categories: guacamole
+tags: [nodejs,react,nw]
 ---
 
 #### 一、环境说明
@@ -9,8 +10,11 @@ tags:
 操作系统：centos 6.5
 软件：guacamole
 
-<!--more-->
+
 #### 二、安装编译和运行环境
+
+<!--more-->
+
 1. 关闭防火墙
 
 ```
