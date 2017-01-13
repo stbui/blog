@@ -1,0 +1,21 @@
+---
+title: wifidog认证服务开发 - nodejs
+date: 2017-01-13 21:03:35
+tags: [nodejs, wifidog]
+---
+
+### wifidog原理
+
+### wifidog接口
+```
+/login
+```
+```
+/auth
+```
+
+### 实现步骤
+
+### 源代码
+
+### 参考资料
