@@ -7,15 +7,33 @@ tags: [nodejs, wifidog]
 ### wifidog原理
 
 ### wifidog接口
+LoginScriptPathFragment
 ```
-/login
+login/?
 ```
+PortalScriptPathFragment
 ```
-/auth
+portal/?
+```
+MsgScriptPathFragment
+```
+gw_message.php?
+```
+PingScriptPathFragment
+```
+ping/?
+```
+AuthScriptPathFragment
+```
+auth/?
 ```
 
 ### 实现步骤
 
 ### 源代码
+```
+
+```
+
 
 ### 参考资料
