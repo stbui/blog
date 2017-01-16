@@ -163,11 +163,11 @@ var _hmt = _hmt || [];
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                21
+                22
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                15
+                16
                 <span>标签</span>
             </div>
         </div>
@@ -216,6 +216,138 @@ var _hmt = _hmt || [];
 
             
             <section id="main">
+    <article id="post-wifidog认证服务开发" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/01/13/wifidog认证服务开发/">wifidog认证服务开发 - nodejs</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/01/13/wifidog认证服务开发/">
+            <time datetime="2017-01-13T13:03:35.000Z" itemprop="datePublished">2017-01-13</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/nodejs/">nodejs</a>, <a class="tag-link" href="/tags/wifidog/">wifidog</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="wifidog原理"><a href="#wifidog原理" class="headerlink" title="wifidog原理"></a>wifidog原理</h3><h3 id="wifidog接口"><a href="#wifidog接口" class="headerlink" title="wifidog接口"></a>wifidog接口</h3><p>LoginScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">login/?</div></pre></td></tr></table></figure></p>
+<p>PortalScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">portal/?</div></pre></td></tr></table></figure></p>
+<p>MsgScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gw_message.php?</div></pre></td></tr></table></figure></p>
+<p>PingScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ping/?</div></pre></td></tr></table></figure></p>
+<p>AuthScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auth/?</div></pre></td></tr></table></figure></p>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/01/13/wifidog认证服务开发/" data-id="cixzdjqls0000vcgg8qlx8uq8" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/01/13/wifidog认证服务开发/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/13/wifidog认证服务开发/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
     <article id="post-react/shadownsocks-install" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -266,7 +398,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/" data-id="cixrbqhep001vs0wa10l5qk92" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/" data-id="cixvtyxy2001wjwggkj2g9dmg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -393,7 +525,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/shadowsocks服务安装/" data-id="cixrbqhct000os0wafllssj9a" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/shadowsocks服务安装/" data-id="cixvtyxw2000kjwggbsffp0jh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -519,7 +651,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/openwrt安装wifidog及配置/" data-id="cixrbqhcj000hs0wamf4ezhxz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/openwrt安装wifidog及配置/" data-id="cixvtyxwe0010jwggxq8jibeg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -656,7 +788,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/pandorabox中mwan负载均衡配置/" data-id="cixrbqhcm000is0wa61oqgytd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/pandorabox中mwan负载均衡配置/" data-id="cixvtyxvs000fjwggk7tuyx64" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -793,7 +925,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/极路由3刷机过程/" data-id="cixrbqhcy000ws0wabnsow85t" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/极路由3刷机过程/" data-id="cixvtyxwc000yjwggu40wgqgj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -928,7 +1060,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2016/12/02/node/nodejs 创建命令行脚本工具/" data-id="cixrbqhec001ns0wa3o5ahnad" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2016/12/02/node/nodejs 创建命令行脚本工具/" data-id="cixvtyxxq001mjwgg5rafq53w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1066,7 +1198,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2016/11/30/docker/在docker中搭建持续集成环境/" data-id="cixrbqhea001ls0walj75k133" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2016/11/30/docker/在docker中搭建持续集成环境/" data-id="cixvtyxxs001njwggh50r2723" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1197,7 +1329,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2016/11/10/docker/docker常见参数/" data-id="cixrbqhea001ks0wa7zaq8wn9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2016/11/10/docker/docker常见参数/" data-id="cixvtyxy5001zjwggsyfufkw9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1336,7 +1468,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2016/11/09/node/npm镜像/" data-id="cixrbqhef001ps0wamdjib91m" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2016/11/09/node/npm镜像/" data-id="cixvtyxxx001rjwggk05jgjmp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -1413,140 +1545,6 @@ var _hmt = _hmt || [];
 </article>
 
 
-    <article id="post-web桌面虚拟化" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/10/20/web桌面虚拟化/">web桌面虚拟化</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/10/20/web桌面虚拟化/">
-            <time datetime="2016-10-20T04:54:12.000Z" itemprop="datePublished">2016-10-20</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/guacamole/">guacamole</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/nodejs/">nodejs</a>, <a class="tag-link" href="/tags/nw/">nw</a>, <a class="tag-link" href="/tags/react/">react</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h4 id="一、环境说明"><a href="#一、环境说明" class="headerlink" title="一、环境说明"></a>一、环境说明</h4><p>操作系统：centos 6.5<br>软件：guacamole</p>
-<h4 id="二、安装编译和运行环境"><a href="#二、安装编译和运行环境" class="headerlink" title="二、安装编译和运行环境"></a>二、安装编译和运行环境</h4></p>
-            <p class="article-more-link">
-                <a href="/2016/10/20/web桌面虚拟化/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2016/10/20/web桌面虚拟化/" data-id="cixrbqhcy000us0waq0cxaj7i" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2016/10/20/web桌面虚拟化/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2016/10/20/web桌面虚拟化/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
     </nav>
@@ -1561,6 +1559,25 @@ var _hmt = _hmt || [];
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/01/13/wifidog认证服务开发/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/01/13/wifidog认证服务开发/" class="title">wifidog认证服务开发 - nodejs</a></p>
+                            <p class="item-date"><time datetime="2017-01-13T13:03:35.000Z" itemprop="datePublished">2017-01-13</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -1638,25 +1655,6 @@ var _hmt = _hmt || [];
                         </div>
                     </li>
                 
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/01/09/极路由3刷机过程/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/openwrt/">openwrt</a></p>
-                            <p class="item-title"><a href="/2017/01/09/极路由3刷机过程/" class="title">极路由3刷机过程</a></p>
-                            <p class="item-date"><time datetime="2017-01-09T01:24:59.000Z" itemprop="datePublished">2017-01-09</time></p>
-                        </div>
-                    </li>
-                
             </ul>
         </div>
     </div>
@@ -1675,7 +1673,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1684,7 +1682,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactNative/">ReactNative</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hc5861/">hc5861</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/">jenkins</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/native/">native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nw/">nw</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openwrt/">openwrt</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandorabox/">pandorabox</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry/">raspberry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactNative/">ReactNative</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hc5861/">hc5861</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/">jenkins</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/native/">native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nw/">nw</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openwrt/">openwrt</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandorabox/">pandorabox</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry/">raspberry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wifidog/">wifidog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1693,7 +1691,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/React/" style="font-size: 10px; color: #999">React</a> <a href="/tags/ReactNative/" style="font-size: 10px; color: #999">ReactNative</a> <a href="/tags/docker/" style="font-size: 10px; color: #999">docker</a> <a href="/tags/hc5861/" style="font-size: 15px; color: #666">hc5861</a> <a href="/tags/jenkins/" style="font-size: 10px; color: #999">jenkins</a> <a href="/tags/kali/" style="font-size: 10px; color: #999">kali</a> <a href="/tags/native/" style="font-size: 10px; color: #999">native</a> <a href="/tags/nodejs/" style="font-size: 15px; color: #666">nodejs</a> <a href="/tags/npm/" style="font-size: 15px; color: #666">npm</a> <a href="/tags/nw/" style="font-size: 10px; color: #999">nw</a> <a href="/tags/openwrt/" style="font-size: 20px; color: #333">openwrt</a> <a href="/tags/pandorabox/" style="font-size: 15px; color: #666">pandorabox</a> <a href="/tags/raspberry/" style="font-size: 10px; color: #999">raspberry</a> <a href="/tags/react/" style="font-size: 15px; color: #666">react</a> <a href="/tags/代理/" style="font-size: 10px; color: #999">代理</a>
+            <a href="/tags/React/" style="font-size: 10px; color: #999">React</a> <a href="/tags/ReactNative/" style="font-size: 10px; color: #999">ReactNative</a> <a href="/tags/docker/" style="font-size: 10px; color: #999">docker</a> <a href="/tags/hc5861/" style="font-size: 15px; color: #666">hc5861</a> <a href="/tags/jenkins/" style="font-size: 10px; color: #999">jenkins</a> <a href="/tags/kali/" style="font-size: 10px; color: #999">kali</a> <a href="/tags/native/" style="font-size: 10px; color: #999">native</a> <a href="/tags/nodejs/" style="font-size: 20px; color: #333">nodejs</a> <a href="/tags/npm/" style="font-size: 15px; color: #666">npm</a> <a href="/tags/nw/" style="font-size: 10px; color: #999">nw</a> <a href="/tags/openwrt/" style="font-size: 20px; color: #333">openwrt</a> <a href="/tags/pandorabox/" style="font-size: 15px; color: #666">pandorabox</a> <a href="/tags/raspberry/" style="font-size: 10px; color: #999">raspberry</a> <a href="/tags/react/" style="font-size: 15px; color: #666">react</a> <a href="/tags/wifidog/" style="font-size: 10px; color: #999">wifidog</a> <a href="/tags/代理/" style="font-size: 10px; color: #999">代理</a>
         </div>
     </div>
 
