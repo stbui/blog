@@ -9,5 +9,3 @@ date: 2015-06-12 16:33:25
 执行完毕，控制权交还渲染引擎，恢复往下解析HTML网页
 
 http://javascript.ruanyifeng.com/bom/engine.html
-
-

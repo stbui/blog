@@ -7,6 +7,18 @@ tags:
 
 在淘宝买的最新`raspberry Pi 3`
 
+### 硬件配置
+
+ CPU: 1.2GHz 四核 Broadcom BCM2837 64 位 ARMv8 处理器
+ WiFi功能：板载 BCM43143 WiFi
+ 蓝牙功能：板载低功耗蓝牙4.0功能 (BLE)
+ 内存：1GB RAM
+ 4 个 USB 2 端口
+ 40引脚扩展GPIO
+ HDMI 和 RCA 视频输出
+ 4路立体声输出和复合视频端口
+ 全尺寸HDMI
+
 ### 烧录镜像
 
 <!--more-->

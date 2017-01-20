@@ -28,6 +28,8 @@ AuthScriptPathFragment
 auth/?
 ```
 
+
+login/?gw_address=&gw_port=&gw_id=&ip=&mac=&url=
 ### 实现步骤
 
 ### 源代码
