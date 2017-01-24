@@ -398,9 +398,9 @@ wifidog包：
 https://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/packages/wifidog_1.2.1-1_ramips_24kec.ipk
 wifidog包：
 http://downloads.openwrt.io/vendors/gee/ralink/packages/wifidog_1.2.1-2_ralink.ipk
-
+源代码：
 https://github.com/wifidog/wifidog-gateway
-
+微信接口文档
 http://mp.weixin.qq.com/wiki/2/55f1e301f4558846d2bf0dd51543e252.html
 
 https://blog.fliaping.com/the-implements-of-weixin-wifi-by-using-wifidog-gateway/
