@@ -5,6 +5,12 @@ categories: docker
 tags:
 ---
 
+##
+
+service docker start
+
+su -
+
 
 ## docker 查询容器、镜像、日志
 ```

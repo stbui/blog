@@ -5,8 +5,7 @@ tags:
 ---
 
 ### 实现目标
-
-手机连接路由器wifi上网，需要授权
+在路由器上安装wifidog搭建无线热点认证系统，终端设备联网没有授权将无法上网
 
 ### 硬件设备
 
@@ -16,7 +15,7 @@ tags:
 ### 软件信息
 
 固件版本：
-wifidog版本：wifidog_1.2.1-1
+wifidog版本：wifidog_1.2.1-2
 
 
 ### 安装wifidog
@@ -25,6 +24,10 @@ wifidog版本：wifidog_1.2.1-1
 
 ```
 opkg install wifidog
+```
+或者
+```
+opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/wifidog_1.2.1-2_ralink.ipk
 ```
 
 ### 配置wifi
@@ -381,6 +384,7 @@ FirewallRule allow tcp to *.weixin.qq.com
 /etc/init.d/wifidog enable
 ```
 
+
 ### 验证
 
 {% post_link wifidog认证服务开发 %}
@@ -390,16 +394,19 @@ FirewallRule allow tcp to *.weixin.qq.com
 
 如果路由器中配置了 `mwan3` ，即使 wifidog 授权成功也无法上网，需要停止mwan3
 ```
-状态 -> 系统进程 -> 找到“mwan3track”相关的关键字
+状态 -> 系统进程 -> 找到“mwan3track”相关的关键字 -> 关闭
 ```
+
 
 ### 参考资料
 wifidog包：
 https://downloads.openwrt.org/chaos_calmer/15.05.1/ramips/mt7620/packages/packages/wifidog_1.2.1-1_ramips_24kec.ipk
-wifidog包：
+
 http://downloads.openwrt.io/vendors/gee/ralink/packages/wifidog_1.2.1-2_ralink.ipk
+
 源代码：
 https://github.com/wifidog/wifidog-gateway
+
 微信接口文档
 http://mp.weixin.qq.com/wiki/2/55f1e301f4558846d2bf0dd51543e252.html
 
@@ -411,3 +418,24 @@ http://www.cnblogs.com/tolimit/p/4223644.html
 
 
 https://github.com/liudf0716/apfree_wifidog
+
+
+### 附 操作命令
+
+```
+opkg install http://downloads.openwrt.io/vendors/gee/ralink/packages/wifidog_1.2.1-2_ralink.ipk
+vi /etc/wifidog.conf
+
+// 编辑配置文件
+// GatewayID default
+// ExternalInterface eth0
+// GatewayAddress 192.168.1.1
+// AUthServer {
+//    Hostname 192.168.1.165
+//    SSLAvailable no
+//    Path /
+// }
+// FirewallRule allow tcp to www.baidu.com
+
+/etc/init.d/wifidog start
+```

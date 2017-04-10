@@ -2,12 +2,12 @@
 title: 在docker中搭建持续集成环境
 date: 2016-11-30 18:47:28
 categories: docker
-tags: [docker, jenkins]
+tags: [docker, jenkins, git]
 ---
 
 ### 目标
 
-在代码发生变动后，持续集成系统(CI)自动在服务端重新编译、打包、发布、重启服务。
+新的提交到git服务后，持续集成系统(CI)自动在服务端重新编译、打包、发布、重启服务。
 
 ### 工具
 
@@ -27,6 +27,15 @@ tags: [docker, jenkins]
 <!--more-->
 
 安装 **docker**
+```
+yum install docker
+```
+```
+docker -v
+```
+```
+service docker start
+```
 
 #### 安装jenkins镜像
 
