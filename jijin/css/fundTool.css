@@ -1,0 +1,27 @@
+.footer { background: #f2f2f2; height: 100px; }
+.contanier { width: 980px; height: auto; margin: 0 auto; padding: 7px; border: 1px solid #ddd; background-color: #fff; }
+.page-title { font-size: 14px; text-align: center; margin: 30px 0; }
+.page-title-24 { font-size: 24px; }
+.hide { display: none; }
+.btn { display: inline-block; padding: 8px 16px; font-size: 18px; text-align: center; line-height: 1; vertical-align: middle; cursor: pointer; color: #fff; }
+.btn-default { font-size: 24px; color: #fff; background-color: #ED5345 }
+.card-item { position: relative; float: left; width: 190px; height: 100px; margin: 10px 25px; background-repeat: no-repeat; cursor: pointer; }
+.card-item-1 { background-image: url(../img/fund_tool_card_1.png); }
+.card-item-2 { background-image: url(../img/fund_tool_card_2.png); }
+.card-item-3 { background-image: url(../img/fund_tool_card_3.png); }
+.card-item-4 { background-image: url(../img/fund_tool_card_4.png); }
+.card-item-5 { background-image: url(../img/fund_tool_card_5.png); }
+.card-item-6 { background-image: url(../img/fund_tool_card_6.png); }
+.card-item-7 { background-image: url(../img/fund_tool_card_7.png); }
+.card-item-8 { background-image: url(../img/fund_tool_card_8.png); }
+.card-item-9 { background-image: url(../img/fund_tool_card_9.png); }
+.card-item-10 { background-image: url(../img/fund_tool_card_10.png); }
+.card-item-11 { background-image: url(../img/fund_tool_card_11.png); }
+.card-item-12 { background-image: url(../img/fund_tool_card_12.png); }
+.card-item-13 { background-image: url(../img/fund_tool_card_13.png); }
+.card-item-14 { background-image: url(../img/fund_tool_card_14.png); }
+.card-item-15 { background-image: url(../img/fund_tool_card_15.png); }
+.card-item-16 { background-image: url(../img/fund_tool_card_16.png); }
+.icon-select { position: relative; top: -10px; left: -10px; width: 36px; height: 37px; background-image: url(../img/icon_unselect.png); background-repeat: no-repeat; }
+.chart { margin-top: 20px; height: 400px; border-top: 1px solid #ddd; }
+.toolbar { position: relative; top: 20px; height: 90px; text-align: center; color: #fff; line-height: 2.5;	/*background-color: rgba(0, 0, 0, .5);*/ background-image: url(../img/transparent.png); }

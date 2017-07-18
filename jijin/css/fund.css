@@ -1,0 +1,168 @@
+body{
+	background: #f1f1f1;
+}
+
+/*--------------内容部分样式--------------*/
+
+.view{
+	width: 980px;
+	height: 153px;
+	border: solid 1px #ddd;
+	margin: 0 auto;
+	background: #fff;
+	border-top: solid 1px #f00;
+}
+.view h2{
+	padding-left: 15px;
+	height: 47px;
+	line-height: 47px;
+	font-size: 18px;
+	color: #666;
+}
+.view ul{
+	padding-left: 38px;
+	margin-top: 15px;
+}
+.view ul li{
+	float: left;
+	width: 270px;
+}
+.view ul li dt{
+	color: #333;
+	line-height: 14px;
+}
+.view ul li dd{
+	color: #f60;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 30px;
+	margin-top: 18px;
+}
+.view ul li dd a{
+	font-size: 12px;
+	color: #ed5345;
+	margin-left: 10px;
+}
+
+.particulars{
+	width: 980px;
+	height: 240px;
+	border: #ddd solid 1px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 20px;
+}
+.list{
+	width: 980px;
+	height: 420px;
+	border: #ddd solid 1px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 10px;
+}
+.list .type{
+	position: relative;
+}
+.list .type ul{
+	padding: 17px 0;
+	border-bottom: #ddd solid 2px;
+}
+.list .type li{
+	padding: 0 40px;
+	font-size: 16px;
+	line-height: 16px;
+	float: left;
+	color: #333;
+	border-right: #ddd 1px solid;
+	cursor: pointer;
+}
+.list .type li:hover{
+	color: #ed5345;
+}
+.list .type .act{
+	color: #ed5345;
+}
+.list .type .last{
+	border-right: 0;
+}
+.list .type .underline{
+	width: 128px;
+	height: 2px;
+	background: #ed5345;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.list_main{
+	padding: 0 15px;
+}
+.list_main dl li{
+	float: left;
+	line-height: 31px;
+	color: #666;
+	padding-left: 25px;
+	width: 143px;
+}
+.list_main dl .four{
+	margin-right: 20px;
+	padding-left: 0;
+	width: 126px;
+}
+.list_main dl dt .last{
+	padding-left: 15px;
+}
+.list_main dl .last{
+	margin-right: 0;
+	margin-left: 50px;
+	padding-left: 5px;
+	width: 150px;
+}
+.list_main dl dd{
+	border-top: #ddd solid 1px;
+	height: 52px;
+}
+.list_main dl dd .four{
+	text-align: center;
+}
+.list_main dl dd p{
+	line-height: 24px;
+	margin-top: 5px;
+	color: #333;
+}
+.list_main dl dd span{
+	color: #999;
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+}
+.list_main dl dd .red p{
+	color: #ed5345;
+}
+.list_main dd .red{
+	color: #ed5345;
+}
+.list_main dl dd .green p{
+	color: #094;
+}
+.list_main dd .green{
+	color: #094;
+}
+.list_main dl dd li{
+	line-height: 50px;
+}
+.list_main dd li{
+	color: #333;
+}
+.list_main dd .last a{
+	float: left;
+	width: 50px;
+	height: 26px;
+	text-align: center;
+	color: #ed5345;
+	margin-top: 12px;
+	line-height: 26px;
+}
+.list_main dd .last a:hover{
+	background: #ed5345;
+	color: #fff;
+}

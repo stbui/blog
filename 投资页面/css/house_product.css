@@ -1,0 +1,304 @@
+body{
+	background: #f1f1f1;
+}
+/*--------------产品信息部分样式--------------*/
+.message{
+	background: url(../img/banner_house.png) no-repeat center;
+}
+
+.product_l .house_expect{
+	font-size: 20px;
+	color: #f60;
+	line-height: 20px;
+}
+.product_l .inside{
+	font-size: 14px;
+	color: #333;
+	line-height: 14px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.product_l .inside dl{
+	float: left;
+	width: 200px;
+}
+.product_l .inside .middle{
+	border-left: #ddd 1px solid;
+	border-right: #ddd 1px solid;
+	padding-left: 20px;
+	width: 170px;
+	margin-right: 20px;
+}
+.product_l .inside dt{
+	color: #FF4949;
+	font-family: 'Arial';
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 13px;
+}
+.product_l .inside dd{
+	font-size: 12px;
+	color: #999;
+}
+.product_l .course{
+	height: 70px;
+	background: #ccc;
+	position: relative;
+}
+.product_l .course ul{
+	position: absolute;
+	z-index: 3;
+}
+.product_l .course p{
+	color: #fff;
+	font-size: 12px;
+	line-height: 16px;
+}
+.product_l .course li{
+	float: left;
+	height: 59px;
+	padding-top: 11px;
+	padding-left: 10px;
+	margin-right: 41px;
+}
+.product_l .course .margin{
+	margin-right: 71px;
+}
+.product_l .course .first{
+	width: 169px;
+	height: 70px;
+	background: red;
+	position: absolute;
+	z-index: 2;
+	background: url(../img/sprite.png) no-repeat -430px -70px;
+}
+.product_l .course .second{
+	width: 399px;
+	height: 70px;
+	background: black;
+	position: absolute;
+	z-index: 1;
+	background:url(../img/sprite.png) no-repeat -130px -300px;
+}
+.product_l .course span{
+	width: 22px;
+	height: 70px;
+	position: absolute;
+	background: url(../img/sprite.png) no-repeat -430px 0;
+	z-index: 4;
+}
+.product_l .course .one{
+	left: 148px;
+}
+.product_l .course .two{
+	left: 378px;
+}
+
+.product_r{
+	float: right;
+	width: 280px;
+	height: 240px;
+	padding-left: 20px;
+	padding-top: 40px;
+}
+
+
+.message_main .product_r .show{
+	display: block;
+}
+.product_r .condition{
+	margin-top: 35px;
+	display: none;
+}
+.product_r .condition dl{
+	height: 24px;
+	line-height: 24px;
+}
+.product_r .condition dt{
+	float: left;
+	text-align: right;
+	color: #999;
+}
+.message_main .product_r .time dt{
+	float: left;
+	width: 100px;
+	text-align: right;
+	color: #999;
+}
+.product_r .condition dd{
+	float: left;
+}
+.message_main .product_r .show{
+	display: block;
+}
+.product_r .over{
+	width: 260px;
+	margin-top: 10px;
+	display: none;
+}
+.product_r .ready{
+	width: 260px;
+	margin-top: 10px;
+	display: none;
+}
+.product_r .join{
+	width: 260px;
+	margin-top: 35px;
+	display: none;
+}
+.product_r .bottom p{
+	font-size: 12px;
+	width: 260px;
+	color: #5ab85e;
+	text-align: center;
+}
+.product_r .ready p{
+	color: #f60;
+}
+.product_r .bottom .loading{
+	height: 5px;
+	width: 260px;
+	background: #efefef;
+	margin-top: 5px;
+	margin-bottom: 7px;
+	position: relative;
+}
+.product_r .bottom .loading span{
+	position: absolute;
+	height: 5px;
+	width: 86%;
+	background: #5ab85e;
+}
+.product_r .over .loading span{
+	width: 100%;
+}
+.product_r .ready .loading span{
+	width: 0%;
+}
+.product_r .bottom .btn{
+	width: 260px;
+	height: 40px;
+	background: #5ab85e;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	display: block;
+}
+.product_r .ready .btn{
+	background: #ffe5d4;
+	color: #f60;
+}
+.product_r .over .btn{
+	background: #ccc;
+}
+.product_r .join .btn:hover{
+	background: #60ba63;
+}
+.product_r .bottom .more{
+	margin-top: 15px;
+	font-size: 12px;
+	color: #f60;
+	line-height: 12px;
+	text-align: center;
+}
+.product_r .bottom .more i{
+	color: #999;
+}
+.product_r .bottom .more a{
+	color: #f60;
+}
+.product_r .bottom .more a:hover{
+	text-decoration: underline;
+}
+
+/*--------------项目介绍部分样式--------------*/
+.project{
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border: #ddd solid 1px;
+}
+.project h2{
+	font-size: 20px;
+	line-height: 20px;
+	padding: 20px 0 20px 30px;
+	height: 20px;
+	color: #5ab85e;
+	font-weight: normal;
+	border-bottom: 1px solid #ddd;
+}
+.project img{
+	display: block;
+	margin: 0 auto;
+}
+.project_1{
+	margin-bottom: 50px;
+}
+.project_1 ul{
+	height: 170px;
+	padding-top: 20px;
+	float: left;
+	color: #333;
+}
+.project_1 .left{
+	width: 75px;
+	padding-left: 30px;
+}
+.project_1 .right{
+	width: 835px;
+}
+.project ul li{
+	line-height: 18px;
+	margin-bottom: 15px;
+}
+.project_2{
+	margin-bottom: 50px;
+}
+
+.project_2 ul{
+	padding-left: 30px;
+	padding-top: 20px;
+	color: #333;
+}
+.project_3 ul{
+	padding-left: 30px;
+	padding-top: 20px;
+	color: #333;
+}
+.project_3{
+	margin-bottom: 50px;
+}
+.project_4 p{
+	padding-left: 30px;
+	padding-top: 20px;
+	color: #333;
+}
+.project_4{
+	margin-bottom: 30px;
+}
+.project_5 a{
+	padding-left: 30px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #5ab85e;
+	float: left;
+}
+.project_5 span{
+	float: left;
+	width: 7px;
+	height: 14px;
+	background: url(../img/sprite.png) no-repeat -460px 0;
+	margin-top: 4px;
+	margin-left: 8px;
+}
+.project_5{
+	margin-bottom: 30px;
+}
+
+.footer{
+	height: 100px;
+	background: #e2e2e2;
+}

@@ -1,0 +1,65 @@
+.message{
+	height: 330px;
+	background: #5ab85e;
+}
+.message .crumble{
+	color: #fff;
+	line-height: 31px;
+	height: 31px;
+	font-family: '微软雅黑';
+}
+.message .crumble a{
+	color: #fff;
+}
+.message .crumble span{
+	color: #fff;
+}
+.message_main{
+	width: 950px;
+	height: 280px;
+	padding-left: 30px;
+	margin: 0 auto;
+	background: #fff;
+}
+.product_l{
+	width: 620px;
+	float: left;
+	margin-top: 30px;
+}
+.product_l .house_name{
+	font-family: '微软雅黑';
+	font-size: 20px;
+	color: #333;
+	font-weight: normal;
+	display: block;
+	line-height: 20px;
+	text-indent: -7px;
+	margin-bottom: 18px;
+}
+.product_l .house_name a{
+	font-size: 12px;
+	color: #f60;
+	line-height: 10px;
+	margin-left: 20px;
+	vertical-align: 2px;
+}
+.border_shadow{
+	width: 16px;
+	height: 280px;
+	float: left;
+	background: url(../img/sprite.png) no-repeat -560px -300px;
+	margin-left: 14px;
+}
+.product_r h2{
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333;
+}
+.product_r h2 span{
+	float: left;
+	width: 16px;
+	height: 20px;
+	background: url(../img/sprite.png) no-repeat -90px -335px;
+	margin-right: 13px;
+}

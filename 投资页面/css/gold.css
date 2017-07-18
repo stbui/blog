@@ -1,0 +1,129 @@
+body{
+	background: #f1f1f1;
+}
+
+/*--------------条件选择部分样式--------------*/
+
+.list{
+	width: 950px;
+	height: 220px;
+	background: #fff;
+	margin: 0 auto 20px;
+	padding-left: 30px;
+	padding-top: 20px;
+	border: solid 1px #ddd;
+}
+.list h2{
+	font-size: 16px;
+	font-weight: normal;
+	color: #474747;
+}
+.list dl{
+	height: 42px;
+	line-height: 42px;
+	color: #474747;
+}
+.list dt{
+	float:left;
+	margin-right: 19px;
+}
+.list .act{
+	width: 38px;
+	height: 20px;
+	margin-right: 40px;
+	margin-top: 11px;
+	background: url(../img/sprite.png) no-repeat -260px 0;
+}
+.list .n_act{
+	width: 38px;
+	height: 20px;
+	margin-right: 40px;
+	margin-top: 11px;
+	background: url(../img/sprite.png) no-repeat -260px -25px;
+}
+.list dd{
+	float:left;
+	width: 130px;
+	margin-right: 25px;
+}
+.list dd:hover{
+	color: #f60;
+}
+.list dd .outer{
+	float: left;
+	margin-top: 13px;
+	width: 14px;
+	height: 14px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+.list dd .inner{
+	width: 14px;
+	height: 14px;
+	background: url(../img/sprite.png) no-repeat -390px 2px;
+	display: none;
+}
+.list .show .inner{
+	display: block;
+}
+.list span{
+	padding-left: 10px;
+	float: left;
+	cursor: pointer;
+	vertical-align: 1px;
+}
+
+/*--------------产品列表部分样式--------------*/
+.main_list{
+	border: solid 1px #ddd;
+}
+
+
+.footer{
+	background: #fff;
+	height: 100px;
+}
+/*--------------分页部分样式--------------*/
+.page{
+	line-height: 30px;
+	height: 30px;
+	margin: 20px auto 60px;
+}
+.page li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border: #ddd solid 1px;
+	margin-right: 10px;
+	text-align: center;
+	background: #fff;
+	cursor: pointer;
+	color: #474747;
+}
+.page .prev{
+	width: 100px;
+}
+.page .next{
+	width: 100px;
+}
+.page .dot{
+	border: 0;
+	cursor: default;
+}
+.page .page_act{
+	color: #fff;
+	background: #f60;
+	border: #f60 solid 1px;
+}
+.page li:hover{
+	color: #f60;
+	border: #f60 1px solid;
+}
+.page .dot:hover{
+	border: 0;
+	color: #474747;
+}
+.page .page_act:hover{
+	color: #fff;
+}
+

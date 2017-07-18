@@ -1,0 +1,176 @@
+.main_list{
+	width: 940px;
+	height: 930px;
+	background: #fff;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.list_top{
+	padding: 19px 0;
+	height: 32px;
+	border-bottom: 1px solid #ddd;
+	padding-left: 10px;
+}
+.list_top .all{
+	float: left;
+	font-size: 14px;
+	color: #333;
+	line-height: 32px;
+	margin-right: 30px;
+}
+.list_top dl{
+	float: left;
+	line-height: 32px;
+	color: #474747;
+}
+.list_top dl .tacl{
+	width: 80px;
+}
+.list_top dl .cur{
+	color: #f60;
+}
+.list_top dt{
+	float: left;
+	color: #999;
+}
+.list_top dd{
+	float: left;
+	cursor: pointer;
+	width: 87px;
+}
+.list_top dd:hover{
+	color: #f60;
+}
+.list_top .index_page{
+	float: right;
+	height: 32px;
+}
+.list_top .index_page span{
+	font-size: 12px;
+	float: left;
+	text-align: center;
+	line-height: 32px;
+	height: 32px;
+	width: 40px;
+	border: solid 1px #ddd;
+	font-family: 'Arial';
+}
+.list_top .index_page .l{
+	cursor: pointer;
+}
+.list_top .index_page .l:hover{
+	color: #f60;
+	border: solid 1px #f60;
+}
+.list_top .index_page .r{
+	cursor: pointer;
+}
+.list_top .index_page .r:hover{
+	color: #f60;
+	border: solid 1px #f60;
+}
+.list_top .index_page .disable{
+	background: #f3f3f3!important;
+	color: #474747!important;
+	border: solid 1px #ddd!important;
+}
+.list_top .index_page .m{
+	line-height: 35px;
+	width: 70px;
+	border: 0;
+}
+.list_product .bcf9{
+	background: #f9f9f9;
+}
+.list_product div{
+	height: 120px;
+	padding: 0 20px;
+}
+.list_product div:hover{
+	background: #fffff1;
+}
+.list_product div li{
+	float: left;
+	padding-right: 87px;
+	line-height: 24px;
+}
+.list_product div .low dt{
+	padding-left: 23px;
+	background: url(../img/sprite.png) no-repeat 7px -130px;
+}
+.list_product div .normal dt{
+	padding-left: 23px;
+	background: url(../img/sprite.png) no-repeat 7px -150px;
+}
+.list_product div .normal_h dt{
+	padding-left: 15px;
+	background: url(../img/sprite.png) no-repeat 0px -170px;
+}
+.list_product div .normal_l dt{
+	padding-left: 15px;
+	background: url(../img/sprite.png) no-repeat 0px -210px;
+}
+.list_product div .high dt{
+	padding-left: 23px;
+	background: url(../img/sprite.png) no-repeat 7px -190px;
+}
+.list_product div .count dt{
+	background: url(../img/sprite.png) no-repeat -310px 18px;
+	position: relative;
+	cursor: pointer;
+}
+.list_product div li dt{
+	font-size: 16px;
+	color: #f60;
+}
+.list_product div li dd{
+	font-size: 12px;
+	color: #999;
+}
+.list_product h2 a{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 57px;
+	cursor: pointer;
+	font-family: '微软雅黑';
+}
+.list_product h2 a:hover{
+	color: #f60;
+}
+.list_product div .btn{
+	padding: 0;
+	padding-left: 25px;
+	width: 120px;
+}
+.list_product .btn a{
+	display: block;
+	background: #fff;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	border: #f60 1px solid;
+	color: #f60;
+}
+.list_product .btn a:hover{
+	background: #f60;
+	color: #fff;
+}
+.list_product .out h2 a{
+	color: #bcbcbc;
+}
+.list_product .out .btn a{
+	color: #fff;
+	background: #cbcbcb;
+	border: 0;
+}
+.list_product .chance .btn a{
+	border: #2cbd00 solid 1px;
+	color: #2cbd00;
+}
+.list_product .chance .btn a:hover{
+	background: #2cbd00;
+	color: #fff;
+}

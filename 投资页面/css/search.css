@@ -1,0 +1,160 @@
+body{
+	background: #f1f1f1;
+}
+
+/*--------------搜索框样式--------------*/
+.search{
+	width: 980px;
+	height: 90px;
+	background: #fff;
+	margin: 0 auto;
+	border: solid 1px #ddd;
+}
+.search .case{
+	height: 30px;
+	margin: 30px 0;
+	padding-left: 30px;
+}
+.search ul .rev{
+	float: left;
+	line-height: 30px;
+	margin-right: 28px;
+	position: relative;
+}
+.search ul .rev .in_case{
+	float: left;
+	width: 70px;
+	text-align: center;
+	color: #474747;
+	margin-right: 5px;
+}
+.search ul .rev .sel{
+	float: left;
+	width: 105px;
+	padding-left: 15px;
+	border: solid 1px #ddd; 
+	color: #999;
+	background: #fff url(../img/sprite.png) no-repeat 100px -91px;
+	cursor: pointer;
+}
+.search ul .rev a{
+	display: block;
+	width: 120px;
+	height: 30px;
+	background: #f60;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+}
+.search ul .rev a:hover{
+	background: #f06000;
+}
+.search ul .rev ul{
+	position: absolute;
+	background: #fff;
+	width: 120px;
+	line-height: 28px;
+	border: #ccc solid 1px;
+	right: 0;
+	top: 30px;
+	display: none;
+}
+.search ul .rev ul li{
+	padding-left: 15px;
+	cursor: pointer;
+}
+.search ul .rev ul li:hover{
+	background: #ffefe5;
+	color: #f60;	
+}
+
+/*--------------结果列表样式--------------*/
+.search_result{
+	line-height: 78px;
+	text-align: center;
+	font-size: 20px;
+	color: #333;
+}
+.search_result i{
+	color: #f60;
+}
+.list{
+	width: 980px;
+	margin: 0 auto;
+	background: #fff;
+	border: #ddd solid 1px;
+}
+.list .tab li{
+	float: left;
+	color: #333;
+	font-size: 16px;
+	width: 196px;
+	border-left: #ddd solid 1px;
+	border-bottom: #ddd solid 1px;
+	text-align: center;
+	background: #f9f9f9;
+	margin-left: -1px;
+	line-height: 48px;
+	height: 48px;
+	cursor: pointer;
+}
+.list .tab .act{
+	background: #fff;
+	border-bottom: 0;
+	border-top: #f60 solid 4px;
+	margin-top: -1px;
+	height: 45px;
+	line-height: 42px;
+}
+.main_list{
+	height: 840px;
+}
+
+/*--------------分页部分样式--------------*/
+.page{
+	line-height: 30px;
+	height: 30px;
+	margin: 30px auto 88px;
+}
+.page li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border: #ddd solid 1px;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	background: #fff;
+	color: #474747;
+}
+.page .prev{
+	width: 100px;
+}
+.page .next{
+	width: 100px;
+}
+.page .dot{
+	border: 0;
+	cursor: default;
+}
+.page .page_act{
+	color: #fff;
+	background: #f60;
+	border: #f60 solid 1px;
+}
+.page li:hover{
+	color: #f60;
+	border: #f60 1px solid;
+}
+.page .dot:hover{
+	border: 0;
+	color: #474747;
+}
+.page .page_act:hover{
+	color: #fff;
+}
+
+.footer{
+	background: #fff;
+	height: 150px;
+}

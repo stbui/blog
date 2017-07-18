@@ -1,0 +1,585 @@
+/*--------------广告基金部分样式--------------*/
+.fund{
+	width: 100%;
+	height: 330px;
+	position: relative;
+	overflow: hidden;
+}
+.fund .wrap980{
+	margin: 0 auto;
+	height: 0;
+	position: relative;
+	width: 980px;
+	z-index: 4;
+}
+.fund .banner li{
+	width: 3000px;
+	height: 330px;
+	position: absolute;
+	left: 50%;
+	margin-left: -1500px;
+}
+.fund .banner li a{
+	width: 3000px;
+	height: 330px;
+	display: block;
+}
+.fund_r{
+	width: 255px;
+	height: 259px;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	background: url(../img/fund_bg.png) no-repeat 0 0;
+	padding-left:16px;
+	padding-top: 6px; 
+}
+.fund_r h2{
+	width: 222px;
+	height: 36px;
+	text-indent: -9999px;
+	background: url(../img/sprite.png) no-repeat 0 0;
+	margin-bottom: 24px;
+}
+.fund_r .obtn{
+	height: 40px;
+}
+.fund_r .obtn a{
+	color: #fff;
+	font-size: 18px;
+	float: left;
+	width: 116px;
+	height: 40px;
+	background: #ed5345;
+	text-align: center;
+	line-height: 40px;
+}
+.fund_r .obtn a:hover{
+	background: #dd4133;
+}
+.fund_r .obtn .login{
+	background: #ff6600;
+	margin-left: 6px;
+}
+.fund_r .obtn .login:hover{
+	background: #ee6600;
+}
+.fund_r .search{
+	width: 238px;
+	height: 14px;
+	margin-top: 28px;
+	line-height: 14px;
+}
+.fund_r .search span{
+	float: left;
+	color: #333;
+}
+.fund_r .search a{
+	float: right;
+	color: #ed5345;
+}
+.fund_r .search a:hover{
+	color: #dd4133;
+}
+.fund_r .text{
+	width: 240px;
+	height: 40px;
+	margin-top: 12px;
+	position: relative;
+}
+.fund_r input{
+	width: 231px;
+	height: 38px;
+	border: 1px solid #dcdcdc;
+	padding-left: 7px;
+	line-height: 38px;
+	font-family: '微软雅黑';
+	cursor: pointer;
+}
+.fund_r .text a{
+	position: absolute;
+	right: 10px;
+	top: 11px;
+	width: 18px;
+	height: 18px;
+	background: url(../img/sprite.png) no-repeat -230px 0;
+}
+.fund_r .text:hover input{
+	border: 1px solid #f60;
+}
+.fund_r p{
+	color: #ed5345;
+	font-size: 16px;
+	margin-top: 18px;
+	padding-left: 10px;
+}
+.fund_r p i{
+	font-size: 18px;
+	font-style: normal;
+	cursor: pointer;
+}
+.fund_r p i:hover{
+	color: #dd4133;
+}
+
+/*--------------近期最牛部分样式--------------*/
+.recent{
+	margin-top: 30px;
+}
+.recent .wrap980{
+	width: 980px;
+	margin: 0 auto;
+}
+.title_name{
+	height: 24px;
+	color: #333;
+}
+.title_name h2{
+	font-size: 18px;
+	padding-left: 10px;
+	line-height: 24px;
+	height: 24px;
+	float: left;
+	background: url(../img/sprite.png) no-repeat 0 -50px;
+}
+.title_name p{
+	font-size: 14px;
+	color: #999;
+	padding-left: 10px;
+	float: left;
+	height: 24px;
+	line-height: 30px;
+}
+.recent_main{
+	margin-top: 20px;
+}
+.recent_main li{
+	width: 296px;
+	height: 242px;
+	float: left;
+	padding-left: 29px;
+	padding-top: 18px;
+	margin-left: -1px;
+	position: relative;
+	border: 1px solid #ddd;
+}
+.recent_main li:hover{
+	width: 294px;
+	padding-left: 27px;
+	padding-top: 16px;
+	height: 240px;
+	border: 3px solid #ddd;
+}
+.recent_main li:hover .icon{
+	top: -2px;
+	right: -2px;
+}
+.recent_main li .icon{
+	display: block;
+	width: 92px;
+	height: 62px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.recent .recent_main .month span{
+	background: url(../img/sprite.png) no-repeat -260px 0;
+}
+.recent .recent_main .quarter span{
+	background: url(../img/sprite.png) no-repeat -360px 0;
+}
+.recent .recent_main .year span{
+	background: url(../img/sprite.png) no-repeat -260px -70px;
+}
+.recent_main li .pro_name a{
+	color: #333;
+	font-size: 24px;
+	line-height: 24px;
+}
+.recent_main li .pro_name a:hover{
+	color: #dd4133;
+}
+.recent_main li .pro_name p{
+	color: #999;
+	width: 267px;
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.recent_main li .mid{
+	margin-top: 34px;
+}
+.recent_main li .mid dl{
+	float: left;
+	width: 133px;
+}
+.recent_main li .mid dl dt{
+	color: #333;
+	line-height: 14px;
+	margin-bottom: 14px;
+}
+.recent_main li .mid dl dd{
+	color: #dd4133;
+	font-size: 34px;
+	line-height: 34px;
+	height: 34px;
+	font-weight: bold;
+	font-family: "Arial";
+}
+.recent_main li .mid dl dd i{
+	font-size: 24px;
+}
+.recent_main li .mid .right{
+	border-left: 1px dashed #ddd;
+	padding-left: 28px;
+	width: 102px;
+}
+.recent_main li .mid .right span{
+	width: 54px;
+	height: 33px;
+	float: left;
+	text-align: center;
+	line-height: 34px;
+	font-size: 26px;
+	background: url(../img/sprite.png) no-repeat 0px -160px;
+	color: #fff;
+}
+.recent_main li .mid .right span i{
+	font-size: 18px;
+	vertical-align: 1px;
+}
+.recent_main li .mid .right del{
+	font-size: 20px;
+	color: #959595;
+	float: left;
+}
+.recent_main li .btn{
+	width: 267px;
+	margin-top: 28px;
+}
+.recent_main li .btn a{
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 40px;
+	background: #ed5345;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.recent_main li .btn a:hover{
+	background: #dd4133;
+}
+
+/*--------------教您买基金部分样式--------------*/
+.fund_shop{
+	margin-top: 30px;
+}
+.fund_shop .wrap980{
+	margin: 0 auto;
+	width: 980px;
+}
+.fund_shop .title_name{
+	height: 64px;
+}
+.fund_shop .title_name h2{
+	width: 212px;
+	height: 64px;
+	background: url(../img/sprite.png) no-repeat 0 -80px;
+	text-indent: -9999px;
+}
+.fund_shop .title_name p{
+	line-height: 110px;
+	height: 64px;
+}
+.fund_shop .choice{
+	margin-top: 10px;
+	height: 120px;
+	color: #fff;
+	font-size: 20px;
+	overflow: hidden;
+}
+.fund_shop .choice .act{
+	top: 0;
+}
+.fund_shop .choice li{
+	float: left;
+	cursor: pointer;
+	width: 225px;
+	height: 105px;
+	padding-left: 18px;
+	padding-top: 15px;
+	background: purple;
+	margin-right: 2px;
+	position: relative;
+	top: 20px;
+}
+.fund_shop .introduction{
+	height: 60px;
+	margin: 8px 0;
+	line-height: 60px;
+	color: #fff;
+	position: relative;
+}
+.fund_shop .introduction li{
+	height: 60px;
+	position: absolute;
+	display: none;
+	width: 100%;
+	padding-left: 68px;
+}
+.fund_shop .list{
+	height: 320px;
+	position: relative;
+}
+.fund_shop .list ul{
+	height: 320px;
+	width: 980px;
+	background: black;
+	position: absolute;
+}
+.fund_shop .list ul li{
+	height: 48px;
+	width: 852px;
+	background: #fff;
+	padding: 16px 64px;
+}
+.fund_shop .list ul .even{
+	background: #f5f5f5;
+}
+.fund_shop .list li:hover{
+	border: 4px solid #f2f2f2;
+	height: 48px;
+	width: 852px;
+	padding: 12px 60px;
+}
+.fund_shop .list li .pro_name{
+	float: left;
+	height: 20px;
+	width: 700px;
+	overflow: hidden;
+}
+.fund_shop .list li .pro_name a{
+	color: #333;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	line-height: 18px;
+}
+.fund_shop .list li .pro_name a:hover{
+	color: #ed5345;
+}
+.fund_shop .list li .pro_name p{
+	float: left;
+	padding-left: 15px;
+	font-size: 12px;
+	line-height: 25px;
+	color: #999;
+}
+.fund_shop .list .l{
+	float: left;
+	width: 700px;
+}
+.fund_shop .list li .btn{
+	float: right;
+	margin-top: 4px;
+}
+.fund_shop .list li .btn a{
+	display: block;
+	width: 136px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #ed5345;
+	border: 2px solid #ed5345;
+	font-size: 18px;
+}
+.fund_shop .list li .btn a:hover{
+	width: 140px;
+	height: 40px;
+	color: #fff;
+	line-height: 40px;
+	border: 0;
+	background: #ed5345;
+}
+.fund_shop .list li .mid{
+	float: left;
+}
+.fund_shop .list li .mid dl{
+	float: left;
+	width: 330px;
+}
+.fund_shop .list li .mid dl dt{
+	float: left;
+	color: #333;
+	line-height: 36px;
+	margin-right: 12px;
+}
+.fund_shop .list li .mid dl dd{
+	float: left;
+	font-family: "Arial";
+	font-size: 24px;
+	color: #ed5345;
+	font-weight: bold;
+}
+
+/*--------------基金申购部分样式--------------*/
+.fund_buy{
+	margin-top: 40px;
+}
+.fund_buy .wrap980{
+	width: 980px;
+	margin: 0 auto;
+}
+.title_name a{
+	float: right;
+	font-size: 14px;
+	color: #ed5345;
+	height: 24px;
+	line-height: 30px;
+}
+.title_name a:hover{
+	color: #dd4133;
+}
+
+/*--------------基金列表部分样式--------------*/
+.fund_list{
+	margin: 40px 0;
+}
+.fund_list .wrap980{
+	width: 980px;
+	margin: 0 auto;
+}
+.type_select{
+	margin-top: 20px;
+	height: 24px;
+	padding: 18px 14px;
+	border: 1px solid #e9e9e9;
+}
+.type_select ul{
+	width: 484px;
+	float: left;
+}
+.type_select ul li{
+	float: left;
+	height: 24px;
+	margin-right: 8px;
+	padding: 0 16px;
+	text-align: center;
+	line-height: 24px;
+	color: #666;
+	cursor: pointer;
+}
+.type_select ul li:hover{
+	color: #ed5345;
+}
+.type_select ul .now{
+	background: #ed5345!important;
+	color: #fff!important;
+}
+.type_select ul .now span{
+	display: none;
+}
+.type_select ul .hot{
+	margin-right: 0;
+	position: relative;
+}
+.type_select ul .hot span{
+	width: 27px;
+	height: 13px;
+	background: url(../img/sprite.png) no-repeat 0 -200px;
+	position: absolute;
+	right: -12px;
+	top: -2px;
+}
+.type_select a{
+	float: right;
+	font-size: 14px;
+	color: #ed5345;
+	height: 24px;
+	line-height: 30px;
+}
+.type_select a:hover{
+	color: #dd4133;
+}
+.fund_list .content{
+	height: 495px;
+	border: 1px solid #e9e9e9;
+	border-bottom: 0;
+	margin-top: 8px;
+}
+.fund_list .content ul{
+	height: 42px;
+	padding-top: 12px;
+	padding-left: 16px;
+	line-height: 30px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.fund_list .content ul li{
+	float: left;
+}
+.fund_list .content li{
+	color: #999;
+	width: 80px;
+	height: 30px;
+	text-align: center;
+	margin-right: 27px;
+}
+.fund_list .content .first{
+	text-align: left;
+	width: 72px;
+}
+.fund_list .content .second{
+	text-align: left;
+	width: 150px;
+}
+.fund_list .content .last{
+	margin-left: 43px;
+}
+.fund_list .content .main_list .last a{
+	width: 80px;
+	height: 30px;
+	display: block;
+	color: #ed5345;
+}
+.fund_list .content .main_list ul:hover{
+	background: #f6f6f6;
+}
+.fund_list .content .main_list .free span{
+	display: block;
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background: url(../img/sprite.png) no-repeat -35px -200px;
+	top: 1px;
+	right: -20px;
+}
+.fund_list .content .main_list .second a{
+	color: #333;
+	position: relative;
+}
+.fund_list .content .main_list .second a:hover{
+	color: #ed5345;
+}
+.fund_list .content .main_list li{
+	color: #333;
+}
+.fund_list .content .main_list .last a:hover{
+	color: #fff;
+	background: #ed5345;
+}
+.fund_list .content .main_list .down{
+	color: #008e47;
+}
+.fund_list .content .main_list .up{
+	color: #ed5345;
+}
+
+
+.footer{
+	background: #f2f2f2;
+	height: 200px;
+}

@@ -1,0 +1,394 @@
+body{
+	background: #f1f1f1;
+}
+.crumble{
+	width: 980px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #333;
+	line-height: 50px;
+}
+.crumble a{
+	color: #333;
+	font-family: '微软雅黑';
+}
+.crumble span{
+	color: #999;
+}
+
+/*--------------产品列表部分样式--------------*/
+.list{
+	width: 940px;
+	height: 1480px;
+	background: #fff;
+	margin: 0 auto;
+	border: #ddd solid 1px;
+	padding: 0 20px;
+}
+.list_top{
+	padding: 19px 0;
+	height: 32px;
+	padding-left: 10px;
+}
+.list_top .all{
+	float: left;
+	font-size: 14px;
+	color: #333;
+	line-height: 32px;
+	margin-right: 30px;
+}
+.list_top dl{
+	float: left;
+	line-height: 32px;
+	color: #474747;
+}
+
+.list_top dt{
+	float: left;
+	color: #f60;
+}
+.list_top dd{
+	float: left;
+	cursor: pointer;
+	margin-left: 22px;
+}
+.list_top dd:hover{
+	color: #f60;
+}
+.list_top .index_page{
+	float: right;
+	height: 32px;
+}
+.list_top .index_page span{
+	font-size: 12px;
+	float: left;
+	text-align: center;
+	line-height: 32px;
+	height: 32px;
+	width: 40px;
+	border: solid 1px #ddd;
+	font-family: 'Arial';
+}
+.list_top .index_page .l{
+	cursor: pointer;
+}
+.list_top .index_page .l:hover{
+	color: #f60;
+	border: solid 1px #f60;
+}
+.list_top .index_page .r{
+	cursor: pointer;
+}
+.list_top .index_page .r:hover{
+	color: #f60;
+	border: solid 1px #f60;
+}
+.list_top .index_page .disable{
+	background: #f3f3f3!important;
+	color: #474747!important;
+	border: solid 1px #ddd!important;
+}
+.list_top .index_page .m{
+	line-height: 35px;
+	width: 70px;
+	border: 0;
+}
+.product li{
+	height: 280px;
+	border-top: #ddd solid 1px;
+	position: relative;
+}
+.product .pic{
+	width: 578px;
+	height: 180px;
+	background: purple;
+	position: absolute;
+	left: 0;
+	top: 50px;
+}
+.product .pic .fff{
+	width: 578px;
+	height: 180px;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.7;
+	filter:Alpha(opacity=70);
+	display: none;
+}
+.product .pic img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.product .pic span{
+	position: absolute;
+	z-index: 1;
+	width: 60px;
+	height: 60px;
+}
+.ing:hover .pic span{
+	background: url(../img/sprite.png) no-repeat -342px -56px;
+}
+.ing .pic span{
+	background: url(../img/sprite.png) no-repeat -262px -56px;
+}
+.hoter .pic span{
+	background: url(../img/sprite.png) no-repeat -263px -123px;
+}
+.over .pic span{
+	background: url(../img/sprite.png) no-repeat -263px -210px;
+}
+.over .pic .fff{
+	display: block;
+}
+.product .product_r{
+	width: 340px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+.product_r .house_name{
+	font-family: '微软雅黑';
+	font-size: 16px;
+	color: #474747;
+	display: block;
+	line-height: 16px;
+	text-indent: -7px;
+	margin-bottom: 10px;
+}
+.product_r .house_name:hover{
+	color: #f60;
+}
+.product_r .house_expect{
+	color: #f60;
+	line-height: 14px;
+}
+.product_r .inside{
+	border-bottom: 1px solid #ddd;
+	font-size: 14px;
+	color: #333;
+	line-height: 14px;
+}
+.product_r .inside dl{
+	float: left;
+	width: 130px;
+	padding-top: 17px;
+	padding-bottom: 10px;
+}
+.product_r .inside dt{
+	color: #999;
+	margin-bottom: 6px;
+}
+.product_r .inside .last{
+	width: 80px;
+}
+.product_r .condition{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.product_r .condition dl{
+	width: 340px;
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: 5px;
+}
+.product_r .condition dt{
+	float: left;
+	text-align: right;
+	color: #999;
+}
+.product_r .condition dd{
+	float: left;
+}
+.product_r .join .loading p{
+	color: #5FB963;
+	text-align: center;
+	font-size: 12px;
+}
+.product_r .join .loading{
+	margin-bottom: 3px;
+	position: relative;
+	width: 340px;
+	height: 20px;
+}
+.product_r .join .loading span{
+	background: #5FB963;
+	width: 36%;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.2;
+	filer:Alpha(opacity=20);
+}
+.product_r .join a{
+	width: 340px;
+	height: 40px;
+	background: #5FB963;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: '微软雅黑';
+	font-size: 16px;
+}
+.product_r .join a:hover{
+	background: #4DAC50;
+}
+.product li:hover{
+	background: #fffff3;
+}
+.product_r .ready_hot .loading p{
+	color: #f60;
+	text-align: center;
+	font-size: 12px;
+}
+.product_r .ready_hot .loading{
+	margin-bottom: 3px;
+	position: relative;
+	width: 340px;
+	height: 20px;
+}
+
+.product_r .ready_hot a{
+	width: 340px;
+	height: 40px;
+	background: #FFE5D4;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #f60;
+	font-family: '微软雅黑';
+	font-size: 16px;
+}
+.product li:hover{
+	background: #fffff3;
+}
+
+.hoter .product_r .condition dt{
+	width: 102px;
+}
+
+.product_r .join .loading p{
+	color: #5FB963;
+	text-align: center;
+	font-size: 12px;
+}
+.product_r .join .loading{
+	margin-bottom: 3px;
+	position: relative;
+	width: 340px;
+	height: 20px;
+}
+.product_r .join .loading span{
+	background: #5FB963;
+	width: 36%;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.2;
+	filer:Alpha(opacity=20);
+}
+.product_r .join a{
+	width: 340px;
+	height: 40px;
+	background: #5FB963;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: '微软雅黑';
+	font-size: 16px;
+}
+.product_r .join a:hover{
+	background: #4DAC50;
+}
+.product li:hover{
+	background: #fffff3;
+}
+.product_r .over_r .loading p{
+	color: #333;
+	text-align: center;
+	font-size: 12px;
+}
+.product_r .over_r .loading{
+	margin-bottom: 3px;
+	position: relative;
+	width: 340px;
+	height: 20px;
+}
+
+.product_r .over_r a{
+	width: 340px;
+	height: 40px;
+	background: #cbcbcb;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-family: '微软雅黑';
+	font-size: 16px;
+}
+.product li:hover{
+	background: #fffff3;
+}
+.product_r .over_r .loading span{
+	background: #DFF1DF;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.5;
+	filer:Alpha(opacity=50);
+}
+.footer{
+	background: #fff;
+	height: 100px;
+}
+/*--------------分页部分样式--------------*/
+.page{
+	line-height: 30px;
+	height: 30px;
+	margin: 20px auto 60px;
+}
+.page li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	border: #ddd solid 1px;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+	color: #474747;
+}
+.page .prev{
+	width: 100px;
+}
+.page .next{
+	width: 100px;
+}
+.page .dot{
+	border: 0;
+	cursor: default;
+}
+.page .page_act{
+	color: #fff;
+	background: #f60;
+	border: #f60 solid 1px;
+}
+.page li:hover{
+	color: #f60;
+	border: #f60 1px solid;
+}
+.page .dot:hover{
+	border: 0;
+	color: #474747;
+}
+.page .page_act:hover{
+	color: #fff;
+}

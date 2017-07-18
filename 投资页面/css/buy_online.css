@@ -1,0 +1,150 @@
+body{
+	background: #f1f1f1;
+}
+.footer{
+	height: 100px;
+	background: #e2e2e2;
+}
+/*--------------产品信息部分样式--------------*/
+
+.product_l .loading{
+	height: 14px;
+}
+.product_l .loading .progress{
+	float: left;
+	line-height: 14px;
+	color: #333;
+}
+.product_l .loading .progress i{
+	color: #6e70b8;
+	margin-left: 5px;
+}
+.product_l .loading .bar{
+	float: left;
+	background: #e2e2f1;
+	margin-top: 5px;
+	margin-left: 30px;
+	width: 470px;
+	height: 6px;
+	position: relative;
+}
+.product_l .loading .bar span{
+	position: absolute;
+	background: #6e70b8;
+	height: 6px;
+	width: 78%;
+}
+
+
+
+.product_r .money{
+	width: 260px;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+.product_r .money span{
+	width: 38px;
+	height: 38px;
+	float: left;
+	border: #ccc solid 1px;
+	cursor: pointer;
+}
+.product_r .money input{
+	float: left;
+	width: 170px;
+	height: 38px;
+	border-top: #ccc solid 1px;
+	border-bottom: #ccc solid 1px;
+	color: #333;
+	font-family: "Arial";
+	font-size: 16px;
+	padding-left: 10px;
+}
+.product_r .money .left{
+	background: url(../img/sprite.png) no-repeat -171px -372px;
+}
+.product_r .money .right{
+	background: url(../img/sprite.png) no-repeat -211px -371px;
+}
+.r_out .money .left:hover{
+	background: url(../img/sprite.png) no-repeat -171px -402px;
+	border-color: #f60;
+}
+.r_out .money .right:hover{
+	background: url(../img/sprite.png) no-repeat -211px -401px;
+	border-color: #f60;
+}
+.r_on .money .left:hover{
+	background: #f60 url(../img/sprite.png) no-repeat -171px -432px;
+	border-color: #f60;
+}
+.r_on .money .right:hover{
+	background: #f60 url(../img/sprite.png) no-repeat -211px -431px;
+	border-color: #f60;
+}
+.r_out .btn{
+	width: 260px;
+	height: 40px;
+	margin-top: 5px;
+}
+.product_r .warning{
+	background: #ffdbdd;
+	width: 260px;
+	height: 20px;
+	font-size: 12px;
+	color: #f00;
+}
+.r_on .content{
+	font-size: 12px;
+	color: #333;
+	line-height: 20px;
+	padding-top: 2px;
+}
+.r_out .content{
+	line-height: 16px;
+	font-size: 12px;
+	color: #333;
+	padding-top: 6px;
+}
+.product_r .content li{
+	height: 18px;
+}
+.product_r .content i{
+	color: #f60;
+}
+.r_on .btn{
+	width: 260px;
+	height: 40px;
+	position: absolute;
+	bottom: 20px;
+	left: 20xp;
+}
+.product_r .btn a{
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	background: #f60;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.r_on .btn a:hover{
+	background: #f06000;
+}
+.r_out .register{
+	display: block;
+}
+.register{
+	padding-left: 65px;
+	color: #333;
+	line-height: 14px;
+	margin-top: 6px;
+	display: none;
+}
+.register a{
+	color: #f60;
+}
+
+

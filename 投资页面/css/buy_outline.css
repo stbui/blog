@@ -1,0 +1,315 @@
+body{
+	background: #f1f1f1;
+}
+.footer{
+	height: 100px;
+	background: #e2e2e2;
+}
+.product_l .way{
+	margin-top: 0;
+}
+.product_l .inside{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+/*--------------产品信息部分样式--------------*/
+.product_l .step{
+	width: 620px;
+	height: 50px;
+	background: #979acb;
+	margin-top: 20px;
+	position: relative;
+}
+.product_l .step ul{
+	height: 42px;
+	position: absolute;
+	z-index: 10;
+	font-size: 12px;
+	color: #fff;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+.product_l .step ul li{
+	float: left;
+	margin-right: 40px;
+}
+.product_l .step span{
+	width: 22px;
+	height: 50px;
+	position: absolute;
+	z-index: 10;
+	background: url(../img/sprite.png) no-repeat -500px -2px;
+}
+.product_l .step span.one{
+	left: 134px;
+}
+.product_l .step span.two{
+	left: 238px;
+}
+.product_l .step span.three{
+	left: 488px;
+}
+.product_l .step div.first{
+	width: 155px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: #979acb;
+	/*background: #4b4d9a;*/
+	z-index: 4;
+	display: none;
+}
+.product_l .step div.first span{
+	width: 17px;
+	height: 50px;
+	background: url(../img/sprite.png) no-repeat -500px -530px;
+	position: absolute;
+	z-index: 9;
+	right:0;
+	display: none;
+}
+.product_l .step div.second{
+	width: 259px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: #979acb;
+	background: #4b4d9a;
+	z-index: 3;
+}
+.product_l .step div.second span{
+	width: 17px;
+	height: 50px;
+	background: url(../img/sprite.png) no-repeat -500px -530px;
+	position: absolute;
+	z-index: 9;
+	right: 0;
+	/*display: none;*/
+}
+.product_l .step div.third{
+	width: 509px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	background: #979acb;
+	z-index: 2;
+}
+.product_l .step div.third span{
+	width: 17px;
+	height: 50px;
+	background: url(../img/sprite.png) no-repeat -500px -530px;
+	position: absolute;
+	z-index: 9;
+	right: 0;
+	display: none;
+}
+.product_r{
+	background: #fff;
+	height: auto;
+	position: relative;
+	z-index: 20;
+}
+.product_r.shadow{
+	box-shadow: 0 2px 4px 2px #c1c1c1;
+}
+.product_r h2 span{
+	width: 20px;
+	background: url(../img/sprite.png) no-repeat -500px -450px;
+}
+.product_r h2 p{
+	height: 20px;
+	line-height: 18px;
+}
+.product_r .remaining{
+	color: #999;
+}
+.product_r .text{
+	width: 260px;
+	position: static;
+	margin-top: 4px;
+	height: 71px;
+}
+.product_r .text input{
+	width: 189px;
+}
+.product_r .text p{
+	width: 243px;
+}
+.product_r .i_code.text input{
+	width: 99px;
+}
+.product_r .i_code.text a{
+	width: 78px;
+	height: 38px;
+	float: left;
+	text-align: center;
+	line-height: 38px;
+	font-size: 12px;
+	border: #f60 solid 1px;
+	margin-left: 10px;
+	background: #fff;
+	color: #f60;
+}
+.product_r .i_code.text a:hover{
+	color: #fff;
+	background: #f60;
+}
+.product_r .code.text{
+	position: relative;
+	height: 42px;
+}
+.product_r .code.text img{
+	top: 1px;
+}
+.product_r .btn{
+	width: 260px;
+	height: 40px;
+	margin-top: 12px;
+	margin-bottom: 20px;
+}
+.product_r .btn a{
+	display: block;
+	width: 260px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	background: #f60;
+	color: #fff;
+	font-size: 16px;
+}
+
+/*--------------悬浮窗部分样式--------------*/
+.reserve{
+	width: 1500px;
+	height: 160px;
+	position: fixed;
+	left: 50%;
+	margin-left: -750px;
+	bottom: 0;
+	background: #6e70b8;
+	z-index: 9999;
+}
+.reserve .wrap980{
+	width: 980px;
+	height: 160px;
+	margin: 0 auto;
+	position: relative;
+}
+.reserve .wrap980 h2{
+	height: 40px;
+	width: 210px;
+	position: absolute;
+	left: 10px;
+	top: 20px;
+}
+.reserve .wrap980 h2 span{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: url(../img/sprite.png) no-repeat -470px -380px;
+}
+.reserve .wrap980 h2 i{
+	float: left;
+	color: #fff;
+	font-size: 40px;
+	height: 40px;
+	line-height: 35px;
+	font-weight: normal;
+}
+.reserve .wrap980 .hit{
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 16px;
+}
+.reserve .wrap980 .text{
+	width: 220px;
+	position:absolute;
+}
+.wrap980 .text span{
+	float: left;
+	width: 60px;
+	height: 40px;
+	background: #f1f1f1;
+	color: #474747;
+	line-height: 40px;
+	text-align: center;
+	border: 0;
+}
+.wrap980 .text input{
+	float: left;
+	width: 150px;
+	height: 40px;
+	padding-left: 10px;
+	border: 0;
+}
+.wrap980 .text p{
+	float: left;
+	font-size: 12px;
+	margin-top: 2px;
+	width: 203px;
+	height: 22px;
+	line-height: 22px;
+	padding-left: 15px;
+	background: #ffdbdd;
+	color: #f00;
+	border: #f00 solid 1px;
+}
+.reserve .wrap980 .i_name{
+	left: 262px;
+	top: 20px;
+}
+.reserve .wrap980 .i_phone{
+	left: 502px;
+	top: 20px;
+}
+.reserve .wrap980 .i_code{
+	left: 742px;
+	top: 20px;
+}
+.reserve .wrap980 .i_code a{
+	color: #f60;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.reserve .wrap980 .code{
+	top: 90px;
+	left: 502px;
+}
+.reserve .wrap980 .code img{
+	display: block;
+	background: purple;
+	width: 65px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.reserve .wrap980 .btn{
+	width: 220px;
+	height: 40px;
+	position: absolute;
+	top: 90px;
+	left: 742px;
+}
+.reserve .wrap980 .btn a{
+	background: #f60;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	display: block;
+	font-size: 16px;
+}
+.reserve .wrap980 .close{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	cursor: pointer;
+	top: -12px;
+	right: -14px;
+	background: url(../img/sprite.png) no-repeat -470px -450px;
+}

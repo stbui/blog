@@ -1,0 +1,17 @@
+.crumble{
+	width: 980px;
+	height: 46px;
+	line-height: 46px;
+	margin: 0 auto;
+	color: #999;
+}
+.crumble a{
+	color: #999;
+}
+.crumble i{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.crumble span{
+	color: #666;
+}
