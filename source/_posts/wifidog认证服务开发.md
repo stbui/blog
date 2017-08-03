@@ -156,6 +156,17 @@ login/?gw_address=&gw_port=&gw_id=&ip=&mac=&url=
 
 ```
 
+### 问题
+
+在wifidog中默认使用php作为开发语言，在配置中默认写死了接口 gw_message
+```
+gw_message.php?message=denied
+```
+使用其他语言开发，需去掉.php
+```
+gw_message?message=denied
+```
+
 
 ### 参考资料
 
