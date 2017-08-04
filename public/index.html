@@ -9,6 +9,7 @@
 <meta property="og:title" content="码农庄园">
 <meta property="og:url" content="http://blog.stbui.com/index.html">
 <meta property="og:site_name" content="码农庄园">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="码农庄园">
     
@@ -163,11 +164,11 @@ var _hmt = _hmt || [];
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                22
+                29
                 <span>文章</span>
             </div>
             <div class="article-info-block">
-                16
+                23
                 <span>标签</span>
             </div>
         </div>
@@ -216,6 +217,690 @@ var _hmt = _hmt || [];
 
             
             <section id="main">
+    <article id="post-docker/php" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/02/23/docker/php/">php</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/02/23/docker/php/">
+            <time datetime="2017-02-23T08:01:00.000Z" itemprop="datePublished">2017-02-23</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/docker/">docker</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/php/">php</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><a href="http://avnpc.com/pages/build-php-develop-env-by-docker" target="_blank" rel="external">http://avnpc.com/pages/build-php-develop-env-by-docker</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/02/23/docker/php/" data-id="cj5wd96fn0021nou92c58lvbg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/02/23/docker/php/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/02/23/docker/php/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
+    <article id="post-docker/nginx" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/02/17/docker/nginx/">nginx在docker中应用</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/02/17/docker/nginx/">
+            <time datetime="2017-02-17T01:47:28.000Z" itemprop="datePublished">2017-02-17</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/docker/">docker</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/nginx/">nginx</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">docker build -t stbui.stbui.com .</div><div class="line"></div><div class="line">docker run -d -p 80:80 stbui.stbui.com</div><div class="line">docker run -d -p 80:80 --name stbui.stbui.com stbui.stbui.com</div></pre></td></tr></table></figure>
+<p>docker cp /root/stbui.stbui.com/nginx.conf ff0:/etc/nginx/conf.d/</p>
+<h3 id="数据持久化"><a href="#数据持久化" class="headerlink" title="数据持久化"></a>数据持久化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">docker run -p 80:80 -v /nginx/conf.d:/etc/nginx/conf.d -d nginx</div><div class="line">docker run -d -p 80:80 -v `pwd`/ngin/conf.d:/etc/nginx/conf.d stbui.stbui.com</div></pre></td></tr></table></figure>
+<p>如果需要持久化日记数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -it -p 80:80  -v `pwd`/logs:/var/log/nginx nginx</div></pre></td></tr></table></figure></p>
+<p>在当前目录下创建logs目录，存放access.log和error.log</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker exec -it e86 /bin/bash</div></pre></td></tr></table></figure>
+<p>Dockerfile</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">FROM nginx:latest</div><div class="line"></div><div class="line">COPY . /usr/share/nginx/html</div><div class="line"></div><div class="line">EXPOSE 80</div></pre></td></tr></table></figure>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/02/17/docker/nginx/" data-id="cj5wd96fl001xnou9yusrb3i1" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/02/17/docker/nginx/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/02/17/docker/nginx/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
+    <article id="post-docker/mysql" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/02/17/docker/mysql/">mysql在docker中应用</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/02/17/docker/mysql/">
+            <time datetime="2017-02-17T01:47:28.000Z" itemprop="datePublished">2017-02-17</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/docker/">docker</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/mysql/">mysql</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="docker-安装"><a href="#docker-安装" class="headerlink" title="docker 安装"></a>docker 安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+<h3 id="mysql-安装"><a href="#mysql-安装" class="headerlink" title="mysql 安装"></a>mysql 安装</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker pull mysql</div></pre></td></tr></table></figure>
+<h3 id="允许mysql容器"><a href="#允许mysql容器" class="headerlink" title="允许mysql容器"></a>允许mysql容器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">docker run -d -p 3306:3306 --name nav-mysql -e MYSQL_ROOT_PASSWORD=root mysql</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">docker exec -it aae /bin/bash</div><div class="line"></div><div class="line">docker exec -i aae mysql -uroot -proot navigation &lt; ./navigation.sql</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">mysql -uroot -proot</div><div class="line"></div><div class="line">show databases;</div><div class="line"></div><div class="line">create database navigation;</div><div class="line"></div><div class="line">use navigation;</div><div class="line"></div><div class="line">show tables;</div></pre></td></tr></table></figure>
+<p>docker cp navigation.sql aae:/tmp/</p>
+<p>use navigation;<br>source /tmp/navigation.sql;</p>
+<p>docker exec CONTAINER_ID  mysql -uroot -e “create database DATABASE_NAME”</p>
+<p>service docker start</p>
+<p>su -</p>
+<p>  docker run -v /var/db:/var/db:Z rhel7 /bin/sh</p>
+<p>  <a href="http://beyondvincent.com/2016/09/10/2016-09-10-use-mysql-with-docker/" target="_blank" rel="external">http://beyondvincent.com/2016/09/10/2016-09-10-use-mysql-with-docker/</a></p>
+<p>  <a href="https://hsulei.com/2016/12/15/docker%E4%B9%8Bmysql%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/" target="_blank" rel="external">https://hsulei.com/2016/12/15/docker%E4%B9%8Bmysql%E9%95%9C%E5%83%8F%E4%BD%BF%E7%94%A8/</a></p>
+<p>  <a href="http://jeeinn.com/2016/08/128/" target="_blank" rel="external">http://jeeinn.com/2016/08/128/</a></p>
+<p>  <a href="https://github.com/xiongjungit/docker-mysql" target="_blank" rel="external">https://github.com/xiongjungit/docker-mysql</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/02/17/docker/mysql/" data-id="cj5wd96fe001snou9bjlw9bpw" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/02/17/docker/mysql/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/02/17/docker/mysql/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
+    <article id="post-fed-restructure" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/01/23/fed-restructure/">东方财富频道从0到1前端页面改造</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/01/23/fed-restructure/">
+            <time datetime="2017-01-23T02:38:25.000Z" itemprop="datePublished">2017-01-23</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><ul>
+<li>必须完美支持IE6</li>
+<li>模块化机制的引入，解决如何维护文件</li>
+<li>组件化引入，与业务隔离，解决松耦合的复用</li>
+<li>引入less，解决CSS的复用</li>
+<li>文档沉淀，解决（铁打的营盘，流水的兵）</li>
+<li>必须要支持SEO</li>
+</ul></p>
+            <p class="article-more-link">
+                <a href="/2017/01/23/fed-restructure/#more">查看更多</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/01/23/fed-restructure/" data-id="cj5wd96df000gnou9vz57x57w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/01/23/fed-restructure/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/23/fed-restructure/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
+    <article id="post-raspberry-openwrt" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/01/17/raspberry-openwrt/">在树莓派3(raspberry Pi 3)上刷openwrt实现路由器</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/01/17/raspberry-openwrt/">
+            <time datetime="2017-01-17T05:04:05.000Z" itemprop="datePublished">2017-01-17</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/opentwrt/">opentwrt</a>, <a class="tag-link" href="/tags/respberry/">respberry</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="硬件配置"><a href="#硬件配置" class="headerlink" title="硬件配置"></a>硬件配置</h3><p> CPU: 1.2GHz 四核 Broadcom BCM2837 64 位 ARMv8 处理器<br> WiFi功能：板载 BCM43143 WiFi<br> 蓝牙功能：板载低功耗蓝牙4.0功能 (BLE)<br> 内存：1GB RAM<br> 4 个 USB 2 端口<br> 40引脚扩展GPIO<br> HDMI 和 RCA 视频输出<br> 4路立体声输出和复合视频端口<br> 全尺寸HDMI</p>
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p>win32 Disk Imager<br>Xshell</p>
+<h3 id="固件地址"><a href="#固件地址" class="headerlink" title="固件地址"></a>固件地址</h3><p><a href="https://downloads.lede-project.org/snapshots/targets/brcm2708/bcm2710" target="_blank" rel="external">https://downloads.lede-project.org/snapshots/targets/brcm2708/bcm2710</a></p>
+<p><a href="https://downloads.lede-project.org/snapshots/targets/brcm2708/bcm2710/lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz" target="_blank" rel="external">https://downloads.lede-project.org/snapshots/targets/brcm2708/bcm2710/lede-brcm2708-bcm2710-rpi-3-ext4-sdcard.img.gz</a></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><h5 id="网络"><a href="#网络" class="headerlink" title="网络"></a>网络</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/config/network</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">config interface &apos;loopback&apos;</div><div class="line">	option ifname &apos;lo&apos;</div><div class="line">	option proto &apos;static&apos;</div><div class="line">	option ipaddr &apos;127.0.0.1&apos;</div><div class="line">	option netmask &apos;255.0.0.0&apos;</div><div class="line"></div><div class="line">config globals &apos;globals&apos;</div><div class="line">	option ula_prefix &apos;fdf7:af39:fdc2::/48&apos;</div><div class="line"></div><div class="line">config interface &apos;lan&apos;</div><div class="line">	option type &apos;bridge&apos;</div><div class="line">#	option ifname &apos;eth0&apos;</div><div class="line">	option proto &apos;static&apos;</div><div class="line">	option ipaddr &apos;192.168.1.1&apos;</div><div class="line">	option netmask &apos;255.255.255.0&apos;</div><div class="line">	option ip6assign &apos;60&apos;</div><div class="line"></div><div class="line">#config interface &apos;wan&apos;</div><div class="line">#	option proto &apos;dhcp&apos;</div><div class="line">#	option ifname &apos;eth0&apos;</div><div class="line"></div><div class="line">config interface &apos;wan&apos;</div><div class="line">	option ifname &apos;eth0&apos;</div><div class="line">	option proto &apos;static&apos;</div><div class="line">	option ipaddr &apos;172.31.32.200&apos;</div><div class="line">	option netmask &apos;255.255.255.0&apos;</div><div class="line">	option gateway &apos;172.31.32.1&apos;</div><div class="line">	option dns &apos;202.96.209.133&apos;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/config/wireless</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">config wifi-device &apos;radio0&apos;</div><div class="line">	option type &apos;mac80211&apos;</div><div class="line">	option channel &apos;11&apos;</div><div class="line">	option hwmode &apos;11g&apos;</div><div class="line">	option path &apos;platform/soc/3f300000.mmc/mmc_host/mmc1/mmc1:0001/mmc1:0001:1&apos;</div><div class="line">	option htmode &apos;HT20&apos;</div><div class="line">	option disabled &apos;0&apos;</div><div class="line"></div><div class="line">config wifi-iface &apos;default_radio0&apos;</div><div class="line">	option device &apos;radio0&apos;</div><div class="line">	option network &apos;lan&apos;</div><div class="line">	option mode &apos;ap&apos;</div><div class="line">	option ssid &apos;stbui&apos;</div><div class="line">	option encryption &apos;none&apos;</div><div class="line">#	option encryption psk2</div><div class="line">#	option key &apos;12345678&apos;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/etc/config/firewall</div></pre></td></tr></table></figure>
+<h5 id="安装luci界面"><a href="#安装luci界面" class="headerlink" title="安装luci界面"></a>安装luci界面</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">opkg update</div><div class="line">opkg install luci</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">/etc/init.d/uhttpd start</div><div class="line">/etc/init.d/uhttpd enable</div></pre></td></tr></table></figure>
+<h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>LEDE:<br><a href="https://lede-project.org/" target="_blank" rel="external">https://lede-project.org/</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/01/17/raspberry-openwrt/" data-id="cj5wd96do000lnou9hhhaduej" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/01/17/raspberry-openwrt/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/17/raspberry-openwrt/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
     <article id="post-wifidog认证服务开发" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -255,13 +940,44 @@ var _hmt = _hmt || [];
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h3 id="wifidog原理"><a href="#wifidog原理" class="headerlink" title="wifidog原理"></a>wifidog原理</h3><h3 id="wifidog接口"><a href="#wifidog接口" class="headerlink" title="wifidog接口"></a>wifidog接口</h3><p>LoginScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">login/?</div></pre></td></tr></table></figure></p>
+            <h3 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h3><p>wifidog是搭建无线热点认证系统的解决方案之一，他比nocat更适合互联网营销思路。目前支持openwrt系统，他实现了路由器和认证服 务器的数据交互，在路由器方是用C语言代码，通过wifidog程序和linux iptables防火墙实现接入用户的认证跳转和控制，在认证服务器方 是通过php实现用户的认证流程和管理。<br><code>优点：</code>有开源代码，可以很方便的搭建认证系统。<br><code>缺点：</code>标准协议是通过iptables方式实现，性能比较差，整体拉低了路由器的数据包处理速度，协议比较繁琐，对认证服务器的造成性能损耗比较大，在安全方面都是明文传输，有一定的安全隐患。</p>
+<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><h3 id="网关心跳协议"><a href="#网关心跳协议" class="headerlink" title="网关心跳协议"></a>网关心跳协议</h3><p>wiﬁdog将ping协议作为心跳机制向认证服务器发送当前状态信息。实现认证服务器 和每个节点的状态双向健康监测的机制。</p>
+<p>请求信息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">http://192.168.1.165/ping/?</div><div class="line">   gw_id=%s</div><div class="line">   sys_load=%lu</div><div class="line">   sys_memfree=%u</div><div class="line">   sys_load=%.2f</div><div class="line">   wiﬁdog_uptime=%lu</div><div class="line">   wmac=               路由器mac地址</div><div class="line">   gw_address=         路由器网关地址</div><div class="line">   router_type=        路由器型号</div><div class="line">   sv＝                 路由固件版本</div></pre></td></tr></table></figure></p>
+<p>回复内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Pong</div></pre></td></tr></table></figure></p>
+<p>例子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+<h3 id="用户状态上报协议"><a href="#用户状态上报协议" class="headerlink" title="用户状态上报协议"></a>用户状态上报协议</h3><p>请求格式：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">http://auth_server/auth/?</div><div class="line">stage=</div><div class="line">ip=</div><div class="line">mac=</div><div class="line">token=</div><div class="line">incoming=</div><div class="line">outgoing=</div><div class="line">gw_id=          路由器授权码</div></pre></td></tr></table></figure></p>
+<p>注意：<br>    ip，mac，token为⽤用户的基本信息<br>    incoming，outgoing为⽤用户的连接计数信息。<br>    stage为请求类别，值为 counter/ login/ logout，分别表⽰示：已认证/新认证⽤用户 /超时删除的⽤用户。</p>
+<p>回复内容：<br>Auth: 状态码   (注意 中间冒号和状态码之间有个空格)</p>
+<pre><code>状态码为：
+0   认证失败
+1   认证成功
+</code></pre><p>例子：</p>
+<h3 id="跳转协议"><a href="#跳转协议" class="headerlink" title="跳转协议"></a>跳转协议</h3><p>对于新连接⽤用户，路由器将其产⽣生的任意url请求通过302重定向到认证平台。<br>请求格式：<br>    <a href="http://auth_server/login/?" target="_blank" rel="external">http://auth_server/login/?</a><br>    gw_id=<br>    gw_address=<br>    gw_port=<br>    mac=<br>    url=<br>    gw_mac=     路由器mac地址</p>
+<p>例子：</p>
+<h3 id="用户注册协议"><a href="#用户注册协议" class="headerlink" title="用户注册协议"></a>用户注册协议</h3><p>用户在平台申请注册，开通互联网权限。由平台将⽤用户请求重定向到路由器， 完成注册。</p>
+<p>请求格式：<br>    <a href="http://gw_ip/wiﬁdog/auth?" target="_blank" rel="external">http://gw_ip/wiﬁdog/auth?</a><br>    token=</p>
+<p>例子：</p>
+<p>注册请求成功，以307的⽅方式跳转平台的 portal/?gw_id=</p>
+<h3 id="注册结果确认协议"><a href="#注册结果确认协议" class="headerlink" title="注册结果确认协议"></a>注册结果确认协议</h3><p> 认证流程⾛走完，路由器会⽤用307跳转⽅方式，将⽤用户请求重新跳转到认证平台。</p>
+<p>请求格式：<br>    <a href="http://auth_server/portal/?" target="_blank" rel="external">http://auth_server/portal/?</a><br>    gw_id=<br>    auth_result=   认证结果</p>
+<pre><code>auth_result 为 successed表⽰示⽤用户在路由器注册成功，failed表⽰示⽤用户在路由器注册失败。
+</code></pre><p>例子：</p>
+<h3 id="路由器在线升级协议"><a href="#路由器在线升级协议" class="headerlink" title="路由器在线升级协议"></a>路由器在线升级协议</h3><p>认证流程⾛走完，路由器会⽤用307跳转⽅方式，将⽤用户请求重新跳转到认证平台。</p>
+<p>请求格式：<br>    <a href="http://auth_server/upgrade/?" target="_blank" rel="external">http://auth_server/upgrade/?</a><br>    sv=<br>    rmac=<br>    router_type=</p>
+<p>响应格式：<br>    upgrade:md5=cc5ce6c4f7147bbdb1babfc32a44338b#url=http:// 192.168.81.55/static/nolimit_wiﬁdog.trx#ver=4.1.1080<br>    md5   为固件的md5值<br>    Url   为固件下载地址<br>    Ver   为固件版本</p>
+<p>例子：</p>
+<h3 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h3><p>LoginScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">login/?</div></pre></td></tr></table></figure></p>
 <p>PortalScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">portal/?</div></pre></td></tr></table></figure></p>
 <p>MsgScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gw_message.php?</div></pre></td></tr></table></figure></p>
 <p>PingScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ping/?</div></pre></td></tr></table></figure></p>
 <p>AuthScriptPathFragment<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">auth/?</div></pre></td></tr></table></figure></p>
+<h3 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">http://192.168.1.1:2060/wifidog/status</div></pre></td></tr></table></figure>
+<p>login/?gw_address=&amp;gw_port=&amp;gw_id=&amp;ip=&amp;mac=&amp;url=</p>
 <h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><h3 id="源代码"><a href="#源代码" class="headerlink" title="源代码"></a>源代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
-<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>在wifidog中默认使用php作为开发语言，在配置中默认写死了接口 gw_message<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gw_message.php?message=denied</div></pre></td></tr></table></figure></p>
+<p>使用其他语言开发，需去掉.php<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">gw_message?message=denied</div></pre></td></tr></table></figure></p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="http://www.cnrouter.com/" target="_blank" rel="external">http://www.cnrouter.com/</a></p>
+
         
         </div>
         <footer class="article-footer">
@@ -271,7 +987,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/13/wifidog认证服务开发/" data-id="cixzdjqls0000vcgg8qlx8uq8" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/13/wifidog认证服务开发/" data-id="cj5wd96dz0010nou95qxlxfrk" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -348,133 +1064,6 @@ var _hmt = _hmt || [];
 </article>
 
 
-    <article id="post-react/shadownsocks-install" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/01/09/react/shadownsocks-install/">Shadowsocks服务安装</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/01/09/react/shadownsocks-install/">
-            <time datetime="2017-01-09T06:33:10.000Z" itemprop="datePublished">2017-01-09</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/代理/">代理</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>系统：<br>Shadowsocks 版本：</p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/" data-id="cixvtyxy2001wjwggkj2g9dmg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
     <article id="post-shadowsocks服务安装" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -525,7 +1114,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/shadowsocks服务安装/" data-id="cixvtyxw2000kjwggbsffp0jh" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/shadowsocks服务安装/" data-id="cj5wd96ds000rnou9rsb1pswd" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -602,6 +1191,133 @@ var _hmt = _hmt || [];
 </article>
 
 
+    <article id="post-react/shadownsocks-install" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/01/09/react/shadownsocks-install/">Shadowsocks服务安装</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/01/09/react/shadownsocks-install/">
+            <time datetime="2017-01-09T06:33:10.000Z" itemprop="datePublished">2017-01-09</time>
+        </a>
+    </div>
+
+
+                        
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/代理/">代理</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>系统：<br>Shadowsocks 版本：</p>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><h3 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h3><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/" data-id="cj5wd96g0002pnou9dqr0bpia" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/09/react/shadownsocks-install/">评论</a>
+    
+
+        </footer>      
+    </div>
+    
+</article>
+
+
     <article id="post-openwrt安装wifidog及配置" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -635,9 +1351,9 @@ var _hmt = _hmt || [];
         
         <div class="article-entry" itemprop="articleBody">
         
-            <p><h3 id="实现目标"><a href="#实现目标" class="headerlink" title="实现目标"></a>实现目标</h3><p>手机连接路由器wifi上网，需要授权</p>
+            <p><h3 id="实现目标"><a href="#实现目标" class="headerlink" title="实现目标"></a>实现目标</h3><p>在路由器上安装wifidog搭建无线热点认证系统，终端设备联网没有授权将无法上网</p>
 <h3 id="硬件设备"><a href="#硬件设备" class="headerlink" title="硬件设备"></a>硬件设备</h3><p>路由器：极路由3(智能双频路由器)<br>型号：HC5861</p>
-<h3 id="软件信息"><a href="#软件信息" class="headerlink" title="软件信息"></a>软件信息</h3><p>固件版本：<br>wifidog版本：wifidog_1.2.1-1</p>
+<h3 id="软件信息"><a href="#软件信息" class="headerlink" title="软件信息"></a>软件信息</h3><p>固件版本：<br>wifidog版本：wifidog_1.2.1-2</p>
 <h3 id="安装wifidog"><a href="#安装wifidog" class="headerlink" title="安装wifidog"></a>安装wifidog</h3></p>
             <p class="article-more-link">
                 <a href="/2017/01/09/openwrt安装wifidog及配置/#more">查看更多</a>
@@ -651,7 +1367,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/openwrt安装wifidog及配置/" data-id="cixvtyxwe0010jwggxq8jibeg" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/openwrt安装wifidog及配置/" data-id="cj5wd96dh000inou9vxuoggze" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -774,7 +1490,7 @@ var _hmt = _hmt || [];
             <p><h3 id="设备环境"><a href="#设备环境" class="headerlink" title="设备环境"></a>设备环境</h3><p>路由器：极路由3(智能双频路由器)<br>型号：HC5861<br>主机型号：MediaTek MT7620A Evaluation Board<br>固件版本：PandoraBox 16.11 R4-3 Mod By LEAN / LuCI Master (git-16.274.06460-a91d7ee)<br>内核版本：3.14.79</p>
 <h3 id="实验目标"><a href="#实验目标" class="headerlink" title="实验目标"></a>实验目标</h3><p>在公司局域网中一般做了网络限速，通过创建多个虚拟wan获取不同IP地址，然后配置mwan达到网速提速效果。</p>
 <h3 id="固件-amp-工具"><a href="#固件-amp-工具" class="headerlink" title="固件&amp;工具"></a>固件&amp;工具</h3><p>ssh: xshell<br>固件：</p>
-<h3 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h3><a href="/2017/01/09/极路由3刷机过程/" title="极路由3刷机过程">极路由3刷机过程</a>
+<h3 id="刷机"><a href="#刷机" class="headerlink" title="刷机"></a>刷机</h3>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3></p>
             <p class="article-more-link">
                 <a href="/2017/01/09/pandorabox中mwan负载均衡配置/#more">查看更多</a>
@@ -788,7 +1504,7 @@ var _hmt = _hmt || [];
 
 </div>
 
-    <a data-url="http://blog.stbui.com/2017/01/09/pandorabox中mwan负载均衡配置/" data-id="cixvtyxvs000fjwggk7tuyx64" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://blog.stbui.com/2017/01/09/pandorabox中mwan负载均衡配置/" data-id="cj5wd96dn000knou9gphpld01" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -865,686 +1581,6 @@ var _hmt = _hmt || [];
 </article>
 
 
-    <article id="post-极路由3刷机过程" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2017/01/09/极路由3刷机过程/">极路由3刷机过程</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2017/01/09/极路由3刷机过程/">
-            <time datetime="2017-01-09T01:24:59.000Z" itemprop="datePublished">2017-01-09</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/openwrt/">openwrt</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/hc5861/">hc5861</a>, <a class="tag-link" href="/tags/openwrt/">openwrt</a>, <a class="tag-link" href="/tags/pandorabox/">pandorabox</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><p>在选用的路由器上刷入pandorabox固件，可以自由扩展功能</p>
-<h3 id="硬件"><a href="#硬件" class="headerlink" title="硬件"></a>硬件</h3><p>路由器：极米3(智能双频路由器)<br>型号：HC5861</p>
-<h3 id="固件"><a href="#固件" class="headerlink" title="固件"></a>固件</h3><p>pandorabox固件下载地址:<br><a href="http://downloads.pandorabox.com.cn/pandorabox-16-10-stable/targets/ralink/mt7620/PandoraBox-ralink-mt7620-hc5861-2017-01-03-git-6c24a7a-squashfs-sysupgrade.bin">pandorabox-16-10-stable</a></p>
-<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p>ssh：xshell</p>
-<h3 id="开始步骤"><a href="#开始步骤" class="headerlink" title="开始步骤"></a>开始步骤</h3></p>
-            <p class="article-more-link">
-                <a href="/2017/01/09/极路由3刷机过程/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2017/01/09/极路由3刷机过程/" data-id="cixvtyxwc000yjwggu40wgqgj" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2017/01/09/极路由3刷机过程/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2017/01/09/极路由3刷机过程/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
-    <article id="post-node/nodejs 创建命令行脚本工具" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/12/02/node/nodejs 创建命令行脚本工具/">nodejs 创建命令行脚本工具</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/12/02/node/nodejs 创建命令行脚本工具/">
-            <time datetime="2016-12-02T00:34:23.000Z" itemprop="datePublished">2016-12-02</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/node/">node</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/nodejs/">nodejs</a>, <a class="tag-link" href="/tags/npm/">npm</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p>系统：windows 10<br>node: v6.9.1<br>npm: v3.9.1</p>
-<h3 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h3><p>安装 nodejs</p>
-<h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3></p>
-            <p class="article-more-link">
-                <a href="/2016/12/02/node/nodejs 创建命令行脚本工具/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2016/12/02/node/nodejs 创建命令行脚本工具/" data-id="cixvtyxxq001mjwgg5rafq53w" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2016/12/02/node/nodejs 创建命令行脚本工具/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2016/12/02/node/nodejs 创建命令行脚本工具/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
-    <article id="post-docker/在docker中搭建持续集成环境" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/11/30/docker/在docker中搭建持续集成环境/">在docker中搭建持续集成环境</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/11/30/docker/在docker中搭建持续集成环境/">
-            <time datetime="2016-11-30T10:47:28.000Z" itemprop="datePublished">2016-11-30</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/docker/">docker</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/docker/">docker</a>, <a class="tag-link" href="/tags/jenkins/">jenkins</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h3 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h3><p>在代码发生变动后，持续集成系统(CI)自动在服务端重新编译、打包、发布、重启服务。</p>
-<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><p><strong>docker:</strong> Docker version 1.10.3, build cb079f6-unsupported</p>
-<p><strong>jenkins:</strong> 2.19.3</p>
-<p><strong>git:</strong></p>
-<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p><strong>虚拟机：</strong>VMware® Workstation 12 Pro<br><strong>系  统：</strong>centos 7</p>
-<h3 id="提前准备"><a href="#提前准备" class="headerlink" title="提前准备"></a>提前准备</h3></p>
-            <p class="article-more-link">
-                <a href="/2016/11/30/docker/在docker中搭建持续集成环境/#more">查看更多</a>
-            </p>
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2016/11/30/docker/在docker中搭建持续集成环境/" data-id="cixvtyxxs001njwggh50r2723" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2016/11/30/docker/在docker中搭建持续集成环境/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2016/11/30/docker/在docker中搭建持续集成环境/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
-    <article id="post-docker/docker常见参数" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/11/10/docker/docker常见参数/">docker常见参数</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/11/10/docker/docker常见参数/">
-            <time datetime="2016-11-10T10:47:28.000Z" itemprop="datePublished">2016-11-10</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/docker/">docker</a>
-    </div>
-
-                        
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h2 id="docker-查询容器、镜像、日志"><a href="#docker-查询容器、镜像、日志" class="headerlink" title="docker 查询容器、镜像、日志"></a>docker 查询容器、镜像、日志</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">docker top &lt;container&gt; #显示容器内运行的进程   </div><div class="line">docker images #查询所有的镜像，默认是最近创建的排在最上。  </div><div class="line">docker ps #查看正在运行的容器  </div><div class="line">docker ps -l #查看最后退出的容器的ID  </div><div class="line">docker ps -a #查看所有的容器，包括退出的。  </div><div class="line">docker logs &#123;容器ID|容器名称&#125; #查询某个容器的所有操作记录。  </div><div class="line">docker logs -f &#123;容器ID|容器名称&#125; #实时查看容易的操作记录。</div></pre></td></tr></table></figure>
-<h2 id="docker-删除容器与镜像"><a href="#docker-删除容器与镜像" class="headerlink" title="docker 删除容器与镜像"></a>docker 删除容器与镜像</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">docker rm$(docker ps -a -q)  #删除所有容器</div><div class="line">	docker rm &lt;containerName or id&gt;  #删除单个容器</div><div class="line"> 	docker rmi id #删除单个容器</div><div class="line">docker rmi$(docker images | grep none | awk &apos;$&#123;print $3&#125;&apos; | sort -r) #删除所有镜像</div></pre></td></tr></table></figure>
-<h2 id="启动停止容器"><a href="#启动停止容器" class="headerlink" title="启动停止容器"></a>启动停止容器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">docker stop &lt;容器名or ID&gt; #停止某个容器  </div><div class="line">docker start &lt;容器名or ID&gt; #启动某个容器  </div><div class="line">docker kill &lt;容器名or ID&gt; #杀掉某个容器</div></pre></td></tr></table></figure>
-<h2 id="docker-参数详解"><a href="#docker-参数详解" class="headerlink" title="docker 参数详解"></a>docker 参数详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">docker  </div><div class="line">useage of docker  </div><div class="line">-D 默认false 允许调试模式(debugmode)  </div><div class="line">-H 默认是unix:///var/run/docker.sock tcp://[host[:port]]来绑定 或者unix://[/path/to/socket]来使用(二进制文件的时候)，当主机ip host=[0.0.0.0],(端口)port=[4243] 或者 path=[/var/run/docker.sock]是缺省值，做为默认值来使用  </div><div class="line">-api-enable-cors 默认flase 允许CORS header远程api  </div><div class="line">-b 默认是空，附加在已存在的网桥上，如果是用&apos;none&apos;参数，就禁用了容器的网络  </div><div class="line">-bip 默认是空，使用提供的CIDR（ClasslessInter-Domain Routing-无类型域间选路）标记地址动态创建网桥(dcoker0),和-b参数冲突  </div><div class="line">-d 默认false 允许进程模式(daemonmode)  </div><div class="line">-dns 默认是空，使docker使用指定的DNS服务器  </div><div class="line">-g 默认是&quot;/var/lib/docker&quot;:作为docker使用的根路径  </div><div class="line">-icc 默认true，允许inter-container来通信  </div><div class="line">-ip 默认&quot;0.0.0.0&quot;：绑定容器端口的默认Ip地址  </div><div class="line">-iptables 默认true 禁用docker添加iptables规则  </div><div class="line">-mtu 默认1500 : 设置容器网络传输的最大单元(mtu)  </div><div class="line">-p 默认是/var/run/docker.pid进程pid使用的文件路径  </div><div class="line">-r 默认是true 重启之前运行的容器  </div><div class="line">-s 默认是空 ，这个是docker运行是使用一个指定的存储驱动器  </div><div class="line">-v 默认false 打印版本信息和退出</div></pre></td></tr></table></figure>
-<h2 id="docker-run命令详解"><a href="#docker-run命令详解" class="headerlink" title="docker run命令详解"></a>docker run命令详解</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">Usage: docker run [OPTIONS] IMAGE[:TAG] [COMMAND] 	[ARG...]  </div><div class="line">Run a command in a new container  </div><div class="line">-a=map[]: 附加标准输入、输出或者错误输出  </div><div class="line">-c=0: 共享CPU格式（相对重要）  </div><div class="line">-cidfile=&quot;&quot;: 将容器的ID标识写入文件  </div><div class="line">-d=false: 分离模式，在后台运行容器，并且打印出容器ID  </div><div class="line">-e=[]:设置环境变量  </div><div class="line">-h=&quot;&quot;: 容器的主机名称  </div><div class="line">-i=false: 保持输入流开放即使没有附加输入流  </div><div class="line">-privileged=false: 给容器扩展的权限  </div><div class="line">-m=&quot;&quot;: 内存限制 (格式:&lt;number&gt;&lt;optional unit&gt;, unit单位 = b, k, m or g)  </div><div class="line">-n=true: 允许镜像使用网络  </div><div class="line">-p=[]: 匹配镜像内的网络端口号  </div><div class="line">-rm=false:当容器退出时自动删除容器 (不能跟 -d一起使用)  </div><div class="line">-t=false: 分配一个伪造的终端输入  </div><div class="line">-u=&quot;&quot;: 用户名或者ID  </div><div class="line">-dns=[]: 自定义容器的DNS服务器  </div><div class="line">-v=[]: 创建一个挂载绑定：[host-dir]:[container-dir]:[rw|ro].如果容器目录丢失，docker会创建一个新的卷  </div><div class="line">-volumes-from=&quot;&quot;: 挂载容器所有的卷  </div><div class="line">-entrypoint=&quot;&quot;: 覆盖镜像设置默认的入口点  </div><div class="line">-w=&quot;&quot;: 工作目录内的容器  </div><div class="line">-lxc-conf=[]: 添加自定义-lxc-	conf=&quot;lxc.cgroup.cpuset.cpus = 0,1&quot;</div><div class="line">-sig-proxy=true: 代理接收所有进程信号(even in non-tty mode)  </div><div class="line">-expose=[]: 让你主机没有开放的端口  </div><div class="line">-link=&quot;&quot;: 连接到另一个容器(name:alias)  </div><div class="line">-name=&quot;&quot;: 分配容器的名称，如果没有指定就会随机生成一个  </div><div class="line">-P=false: Publish all exposed ports to thehost interfaces 公布所有显示的端口主机接口</div></pre></td></tr></table></figure>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2016/11/10/docker/docker常见参数/" data-id="cixvtyxy5001zjwggsyfufkw9" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2016/11/10/docker/docker常见参数/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2016/11/10/docker/docker常见参数/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
-    <article id="post-node/npm镜像" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2016/11/09/node/npm镜像/">npm镜像</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2016/11/09/node/npm镜像/">
-            <time datetime="2016-11-09T04:33:25.000Z" itemprop="datePublished">2016-11-09</time>
-        </a>
-    </div>
-
-
-                        
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/npm/">npm</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <h2 id="国内优秀npm镜像"><a href="#国内优秀npm镜像" class="headerlink" title="国内优秀npm镜像"></a>国内优秀npm镜像</h2><h3 id="淘宝npm镜像"><a href="#淘宝npm镜像" class="headerlink" title="淘宝npm镜像"></a>淘宝npm镜像</h3><ul>
-<li>搜索地址：<a href="http://npm.taobao.org/" target="_blank" rel="external">http://npm.taobao.org/</a></li>
-<li>registry地址：<a href="http://registry.npm.taobao.org/" target="_blank" rel="external">http://registry.npm.taobao.org/</a></li>
-</ul>
-<h3 id="cnpmjs镜像"><a href="#cnpmjs镜像" class="headerlink" title="cnpmjs镜像"></a>cnpmjs镜像</h3><ul>
-<li>搜索地址：<a href="http://cnpmjs.org/" target="_blank" rel="external">http://cnpmjs.org/</a></li>
-<li>registry地址：<a href="http://r.cnpmjs.org/" target="_blank" rel="external">http://r.cnpmjs.org/</a></li>
-</ul>
-<h2 id="如何使用"><a href="#如何使用" class="headerlink" title="如何使用"></a>如何使用</h2><h3 id="临时使用"><a href="#临时使用" class="headerlink" title="临时使用"></a>临时使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm --registry https://registry.npm.taobao.org install stbui</div></pre></td></tr></table></figure>
-<h3 id="持久使用"><a href="#持久使用" class="headerlink" title="持久使用"></a>持久使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config set registry https://registry.npm.taobao.org</div></pre></td></tr></table></figure>
-<p>配置后可通过下面方式来验证是否成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm config get registry</div></pre></td></tr></table></figure></p>
-<p>或<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm info stbui</div></pre></td></tr></table></figure></p>
-<h3 id="通过cnpm使用"><a href="#通过cnpm使用" class="headerlink" title="通过cnpm使用"></a>通过cnpm使用</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div><div class="line"></div><div class="line">// 使用</div><div class="line">cnpm install stbui</div></pre></td></tr></table></figure>
-
-        
-        </div>
-        <footer class="article-footer">
-            <div class="share-container">
-
-
-
-</div>
-
-    <a data-url="http://blog.stbui.com/2016/11/09/node/npm镜像/" data-id="cixvtyxxx001rjwggk05jgjmp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
-
-            
-    
-        <a href="http://blog.stbui.com/2016/11/09/node/npm镜像/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://blog.stbui.com/2016/11/09/node/npm镜像/">评论</a>
-    
-
-        </footer>      
-    </div>
-    
-</article>
-
-
     <nav id="page-nav">
         <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
     </nav>
@@ -1563,7 +1599,64 @@ var _hmt = _hmt || [];
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/01/13/wifidog认证服务开发/" class="thumbnail">
+                            <a href="/2017/02/23/docker/php/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/docker/">docker</a></p>
+                            <p class="item-title"><a href="/2017/02/23/docker/php/" class="title">php</a></p>
+                            <p class="item-date"><time datetime="2017-02-23T08:01:00.000Z" itemprop="datePublished">2017-02-23</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/02/17/docker/nginx/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/docker/">docker</a></p>
+                            <p class="item-title"><a href="/2017/02/17/docker/nginx/" class="title">nginx在docker中应用</a></p>
+                            <p class="item-date"><time datetime="2017-02-17T01:47:28.000Z" itemprop="datePublished">2017-02-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/02/17/docker/mysql/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/docker/">docker</a></p>
+                            <p class="item-title"><a href="/2017/02/17/docker/mysql/" class="title">mysql在docker中应用</a></p>
+                            <p class="item-date"><time datetime="2017-02-17T01:47:28.000Z" itemprop="datePublished">2017-02-17</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/01/23/fed-restructure/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1574,15 +1667,15 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/01/13/wifidog认证服务开发/" class="title">wifidog认证服务开发 - nodejs</a></p>
-                            <p class="item-date"><time datetime="2017-01-13T13:03:35.000Z" itemprop="datePublished">2017-01-13</time></p>
+                            <p class="item-title"><a href="/2017/01/23/fed-restructure/" class="title">东方财富频道从0到1前端页面改造</a></p>
+                            <p class="item-date"><time datetime="2017-01-23T02:38:25.000Z" itemprop="datePublished">2017-01-23</time></p>
                         </div>
                     </li>
                 
                     <li>
                         
                         <div class="item-thumbnail">
-                            <a href="/2017/01/09/react/shadownsocks-install/" class="thumbnail">
+                            <a href="/2017/01/17/raspberry-openwrt/" class="thumbnail">
     
     
         <span class="thumbnail-image thumbnail-none"></span>
@@ -1593,65 +1686,8 @@ var _hmt = _hmt || [];
                         
                         <div class="item-inner">
                             <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/01/09/react/shadownsocks-install/" class="title">Shadowsocks服务安装</a></p>
-                            <p class="item-date"><time datetime="2017-01-09T06:33:10.000Z" itemprop="datePublished">2017-01-09</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/01/09/shadowsocks服务安装/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/01/09/shadowsocks服务安装/" class="title">raspberry Pi 3上安装openwrt系统</a></p>
-                            <p class="item-date"><time datetime="2017-01-09T06:33:10.000Z" itemprop="datePublished">2017-01-09</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/01/09/openwrt安装wifidog及配置/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"></p>
-                            <p class="item-title"><a href="/2017/01/09/openwrt安装wifidog及配置/" class="title">openwrt安装wifidog及配置</a></p>
-                            <p class="item-date"><time datetime="2017-01-09T06:17:01.000Z" itemprop="datePublished">2017-01-09</time></p>
-                        </div>
-                    </li>
-                
-                    <li>
-                        
-                        <div class="item-thumbnail">
-                            <a href="/2017/01/09/pandorabox中mwan负载均衡配置/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-</a>
-
-                        </div>
-                        
-                        <div class="item-inner">
-                            <p class="item-category"><a class="article-category-link" href="/categories/openwrt/">openwrt</a></p>
-                            <p class="item-title"><a href="/2017/01/09/pandorabox中mwan负载均衡配置/" class="title">pandorabox中mwan负载均衡配置</a></p>
-                            <p class="item-date"><time datetime="2017-01-09T03:24:44.000Z" itemprop="datePublished">2017-01-09</time></p>
+                            <p class="item-title"><a href="/2017/01/17/raspberry-openwrt/" class="title">在树莓派3(raspberry Pi 3)上刷openwrt实现路由器</a></p>
+                            <p class="item-date"><time datetime="2017-01-17T05:04:05.000Z" itemprop="datePublished">2017-01-17</time></p>
                         </div>
                     </li>
                 
@@ -1664,7 +1700,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/guacamole/">guacamole</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/openwrt/">openwrt</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/raspberry/">raspberry</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/docker/">docker</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/guacamole/">guacamole</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/node/">node</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/openwrt/">openwrt</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/raspberry/">raspberry</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1673,7 +1709,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/01/">一月 2017</a><span class="archive-list-count">10</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">十二月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">十一月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">十月 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">五月 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">十二月 2015</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1682,7 +1718,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">标签</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactNative/">ReactNative</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hc5861/">hc5861</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/">jenkins</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/native/">native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nw/">nw</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openwrt/">openwrt</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandorabox/">pandorabox</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry/">raspberry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wifidog/">wifidog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ReactNative/">ReactNative</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hc5861/">hc5861</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/">jenkins</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kali/">kali</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/native/">native</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nginx/">nginx</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/npm/">npm</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nw/">nw</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/opentwrt/">opentwrt</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/openwrt/">openwrt</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pandorabox/">pandorabox</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/php/">php</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/raspberry/">raspberry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/react/">react</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/respberry/">respberry</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tcpdump/">tcpdump</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wifidog/">wifidog</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/代理/">代理</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1691,7 +1727,7 @@ var _hmt = _hmt || [];
     <div class="widget-wrap">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/React/" style="font-size: 10px; color: #999">React</a> <a href="/tags/ReactNative/" style="font-size: 10px; color: #999">ReactNative</a> <a href="/tags/docker/" style="font-size: 10px; color: #999">docker</a> <a href="/tags/hc5861/" style="font-size: 15px; color: #666">hc5861</a> <a href="/tags/jenkins/" style="font-size: 10px; color: #999">jenkins</a> <a href="/tags/kali/" style="font-size: 10px; color: #999">kali</a> <a href="/tags/native/" style="font-size: 10px; color: #999">native</a> <a href="/tags/nodejs/" style="font-size: 20px; color: #333">nodejs</a> <a href="/tags/npm/" style="font-size: 15px; color: #666">npm</a> <a href="/tags/nw/" style="font-size: 10px; color: #999">nw</a> <a href="/tags/openwrt/" style="font-size: 20px; color: #333">openwrt</a> <a href="/tags/pandorabox/" style="font-size: 15px; color: #666">pandorabox</a> <a href="/tags/raspberry/" style="font-size: 10px; color: #999">raspberry</a> <a href="/tags/react/" style="font-size: 15px; color: #666">react</a> <a href="/tags/wifidog/" style="font-size: 10px; color: #999">wifidog</a> <a href="/tags/代理/" style="font-size: 10px; color: #999">代理</a>
+            <a href="/tags/React/" style="font-size: 10px; color: #999">React</a> <a href="/tags/ReactNative/" style="font-size: 10px; color: #999">ReactNative</a> <a href="/tags/docker/" style="font-size: 20px; color: #333">docker</a> <a href="/tags/git/" style="font-size: 10px; color: #999">git</a> <a href="/tags/hc5861/" style="font-size: 16.67px; color: #555">hc5861</a> <a href="/tags/jenkins/" style="font-size: 10px; color: #999">jenkins</a> <a href="/tags/kali/" style="font-size: 10px; color: #999">kali</a> <a href="/tags/mysql/" style="font-size: 10px; color: #999">mysql</a> <a href="/tags/native/" style="font-size: 10px; color: #999">native</a> <a href="/tags/nginx/" style="font-size: 10px; color: #999">nginx</a> <a href="/tags/nodejs/" style="font-size: 16.67px; color: #555">nodejs</a> <a href="/tags/npm/" style="font-size: 13.33px; color: #777">npm</a> <a href="/tags/nw/" style="font-size: 10px; color: #999">nw</a> <a href="/tags/opentwrt/" style="font-size: 10px; color: #999">opentwrt</a> <a href="/tags/openwrt/" style="font-size: 20px; color: #333">openwrt</a> <a href="/tags/pandorabox/" style="font-size: 16.67px; color: #555">pandorabox</a> <a href="/tags/php/" style="font-size: 10px; color: #999">php</a> <a href="/tags/raspberry/" style="font-size: 10px; color: #999">raspberry</a> <a href="/tags/react/" style="font-size: 13.33px; color: #777">react</a> <a href="/tags/respberry/" style="font-size: 10px; color: #999">respberry</a> <a href="/tags/tcpdump/" style="font-size: 10px; color: #999">tcpdump</a> <a href="/tags/wifidog/" style="font-size: 10px; color: #999">wifidog</a> <a href="/tags/代理/" style="font-size: 10px; color: #999">代理</a>
         </div>
     </div>
 
