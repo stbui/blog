@@ -42,7 +42,7 @@ use navigation;
 show tables;
 
 ```
-
+```
 docker cp navigation.sql aae:/tmp/
 
 use navigation;
@@ -58,8 +58,16 @@ su -
 
 
   docker run -v /var/db:/var/db:Z rhel7 /bin/sh
+```
 
 
+---
+```
+mysql -uroot -p -e "CREATE DATABASE vcooline_ikcrm_development DEFAULT CHARSET utf8"
+mysql -uroot -p -e "CREATE DATABASE ikcrm_cms_development DEFAULT CHARSET utf8"
+mysql -uroot -p vcooline_ikcrm_development < t.sql
+mysql -uroot -p ikcrm_cms_development < t.sql
+```
 
 
 
