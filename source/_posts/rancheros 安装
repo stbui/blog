@@ -15,11 +15,25 @@ passwd rancher
 ```
 vi cloud-config.yml
 ```
+
 ```
+# cloud-config
+
 hostname: rancheros-stbui
+
+rancher:
+  network:
+    dns:
+      nameservers:
+        - 8.8.8.8
+        - 114.114.114.114
+    interfaces:
+      dhcp: true
+
 ssh_authorized_keys:
   - 公钥
 ``` 
+
 ```
 sudo ros install -c cloud-config.yml -d /dev/sda
 ```
