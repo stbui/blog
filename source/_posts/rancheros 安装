@@ -21,17 +21,8 @@ vi cloud-config.yml
 
 hostname: rancheros-stbui
 
-rancher:
-  network:
-    dns:
-      nameservers:
-        - 8.8.8.8
-        - 114.114.114.114
-    interfaces:
-      dhcp: true
-
 ssh_authorized_keys:
-  - 公钥
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXi7gAB95U3Wjrh9OzToqIzKTFISipLJylAHCzpm4KlV25dDheGSL+RuonDTK0uSDbqMiw0Kg85pdkcDfdmZ+bX8LCRbwazSwM9C/xHTgoa0DRhy/VDb7SmZQ10aSwOTQPelyL3rN71e3oXdFZ35KVJTWXtKoLNSU0A856jPCVR4fiIZUK7iMDGl6XKJKiG63lYBrswzTnfMiC9EDuU1n3gHJk1jToO/Q46sif2pgc0ZQmeUmkngM/vvLyYYChXd6z7JTm9o3vZAmCuyHlAma1m3qDElQF4EMYNgvxx45xVzx5UitQQcq0ujYXhb7KzsGmLWsdm29onqwT0T7Jd2ed stbui@stbui.com
 ``` 
 
 ```
