@@ -15,7 +15,7 @@ passwd rancher
 
 ### ssh连接
 
-ssh root@192.168.1.22
+ssh rancher@192.168.1.22
 
 添加 *cloud-config* 文件
 
