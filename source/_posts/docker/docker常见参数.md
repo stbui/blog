@@ -25,10 +25,10 @@ su -
 
 ## docker 删除容器与镜像
 ```
-	docker rm$(docker ps -a -q)  #删除所有容器
- 	docker rm <containerName or id>  #删除单个容器
-  	docker rmi id #删除单个容器
-	docker rmi$(docker images | grep none | awk '${print $3}' | sort -r) #删除所有镜像
+docker rm $(docker ps -a -q)  #删除所有容器
+docker rm id  #删除单个容器
+docker rmi id #删除单个容器
+docker rmi $(docker images | grep none | awk '${print $3}' | sort -r) #删除所有镜像
 ```
 
 ## 启动停止容器
