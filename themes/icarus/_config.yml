@@ -1,10 +1,10 @@
 # Menus
 menu:
   Home: .
-  Archives: archives
-  Categories: categories
-  Tags: tags
-  About: about
+#   Archives: archives
+#   Categories: categories
+#   Tags: tags
+#   About: about
 
 # Customize
 customize:
@@ -27,20 +27,20 @@ customize:
     favicon: # path to favicon
     social_links:
         github: https://github.com/stbui
-        twitter: /
-        facebook: /
-        dribbble: /
+        # twitter: /
+        # facebook: /
+        # dribbble: /
         rss: /
     social_link_tooltip: true # enable the social link tooltip, options: true, false
 
 # Widgets
 widgets:
-    - recent_posts
-    - category
-    - archive
-    - tag
-    - tagcloud
-    # - links
+    # - recent_posts
+    # - category
+    # - archive
+    # - tag
+    # - tagcloud
+    - links
 
 # Search
 search:
@@ -64,7 +64,7 @@ plugins:
     google_analytics: # enter the tracking ID for your Google Analytics
     google_site_verification: # enter Google site verification code
     baidu_analytics: # enter Baidu Analytics hash key
-    tencent_analytics: 58860839
+    tencent_analytics: 
 
 # PV
 pv:
