@@ -18,12 +18,20 @@ grafana 功能通过插件方式来扩展不同客户的需求
 
 ### 环境
 
-- 版本：7.13.0
-- 语言
-  - [x] React v0.0.0
-  - [x] Angular v0.0.0
-  - [x] typescript v0.0.0
+- 版本：7.2.0
+- 主要依赖包
+  - [x] React v16.12.0
+  - [x] Angular v1.6.9
+  - [x] jquery v3.5.1
+  - [x] d3 v5.15.0
+  - [x] typescript v3.9.3
+  - [x] webpack v4.41.5
 
 ### 目录结构
 
-grafana 整合了 react 和 angular 框架，让二次开发门槛提高不少
+grafana 整合了多个框架，让二次开发门槛提高不少
+
+https://github.com/stbui/grafana/blob/4bb3f66569b6650e02fe68adb802cf93581c6d2d/public/app/features/plugins/built_in_plugins.ts
+
+所用插件导入导出入口
+
