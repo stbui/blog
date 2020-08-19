@@ -29,9 +29,12 @@ grafana 功能通过插件方式来扩展不同客户的需求
 
 ### 目录结构
 
-grafana 整合了多个框架，让二次开发门槛提高不少
+grafana 集成了多个框架，大部分以 Angular 实现
 
-https://github.com/stbui/grafana/blob/4bb3f66569b6650e02fe68adb802cf93581c6d2d/public/app/features/plugins/built_in_plugins.ts
+> 所用插件导入导出入口:
 
-所用插件导入导出入口
+https://github.com/stbui/grafana/blob/60e186ae635dcf715ba8f095de749cd18a2a39a2/public/app/features/plugins/built_in_plugins.ts
 
+> 内置插件文件目录
+
+public/app/plugins/datasource
