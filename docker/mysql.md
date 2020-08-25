@@ -1,10 +1,3 @@
----
-title: mysql在docker中应用
-date: 2017-02-17 09:47:28
-categories: docker
-tags: [mysql, docker]
----
-
 ### docker 安装
 
 ```
