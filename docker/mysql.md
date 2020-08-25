@@ -11,38 +11,60 @@ tags: [mysql, docker]
 brew install docker
 ```
 
-### mysql 安装
+#### 一、环境说明
+
+操作系统：window 10
+
+工具：docker toolbox
+
+
+#### 二、安装docker
+
+
+#### 三、拉取mysql镜像
 
 ```
 docker pull mysql
 ```
 
-> 允行 mysql 容器
-
+#### 四、启动mysql镜像
 ```
-docker run -d -p 3306:3306 --name nav-mysql -e MYSQL_ROOT_PASSWORD=root mysql
+docker run -d -p 3306:3306 --name stbui-mysql -e MYSQL_ROOT_PASSWORD=root mysql
 ```
 
-> 进入容器
-```
-docker exec -it aae /bin/bash
+username: root
 
+password: root
+
+port:     3306
+
+> 导入数据库文件
+```
 docker exec -i aae mysql -uroot -proot navigation < ./navigation.sql
+
 ```
 
-### mysql 命令
+#### 五、停止运行mysql镜像
+```
+docker stop mysql
+```
+
+#### mysql
+
 ```
 mysql -uroot -proot
-
 show databases;
-
 create database navigation;
-
 use navigation;
-
 show tables;
 
+mysql -uroot -p -e "CREATE DATABASE vcooline_ikcrm_development DEFAULT CHARSET utf8"
+mysql -uroot -p -e "CREATE DATABASE ikcrm_cms_development DEFAULT CHARSET utf8"
+mysql -uroot -p vcooline_ikcrm_development < t.sql
+mysql -uroot -p ikcrm_cms_development < t.sql
+
 ```
+#### other
 
 ```
 docker cp navigation.sql aae:/tmp/
