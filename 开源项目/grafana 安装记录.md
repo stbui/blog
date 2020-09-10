@@ -8,6 +8,7 @@
 ## centos
 ```
 yum update
+yum install gcc gcc-c++
 ```
 
 ## git
@@ -35,4 +36,14 @@ go env
 
 ## nodejs
 ```
+wget https://nodejs.org/dist/v12.18.3/node-v12.18.3.tar.gz
+
+tar -zvxf node-v6.2.0.tar.gz
+
+cd node-v6.2.0.tar.gz
+
+ln -s /usr/local/node-v6.2.0.tar.gz/node /usr/local/bin/node
+ln -s /usr/local/node-v6.2.0.tar.gz/npm /usr/local/bin/npm
+ln -s /usr/local/node-v6.2.0.tar.gz/node /usr/bin/node
+ln -s /usr/local/node-v6.2.0.tar.gz/npm /usr/bin/npm
 ```
