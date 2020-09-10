@@ -1,15 +1,12 @@
 # grafana 安装记录
 
+部署系统：**centos**
+
+# 环境依赖
 
 - git
 - go > 1.13.0
-- nodejs@12
-
-## centos
-```
-yum update
-yum install gcc gcc-c++
-```
+- nodejs <13 >12
 
 ## git
 ```
@@ -39,30 +36,48 @@ go env -w GOPROXY=https://goproxy.cn,direct
 
 ## nodejs
 ```
-wget https://nodejs.org/dist/v12.18.3/node-v12.18.3.tar.gz
+# 下载
+wget https://nodejs.org/dist/v12.16.3/node-v12.16.3-linux-x64.tar.xz
 
-tar -zvxf node-v12.18.3.tar.gz
+# 解压
+tar -C /usr/local -xzf node-v12.16.3-linux-x64.tar.xz
 
-cd node-v12.18.3.tar.gz
+# 设置环境变量
+export PATH=$PATH:/usr/local/node-v12.16.3-linux-x64/bin
 
+# 验证成功
+node -v
+npm -v
+
+# 
 ln -s /usr/local/node-v12.18.3/node /usr/local/bin/node
 ln -s /usr/local/node-v12.18.3/npm /usr/local/bin/npm
 ln -s /usr/local/node-v12.18.3/node /usr/bin/node
 ln -s /usr/local/node-v12.18.3/npm /usr/bin/npm
-
-npm install yarn
 ```
 
 ## grafana
 
 ```
-git clone https://github.com/stbui/grafana --depath=1
+git clone https://github.com/stbui/grafana --depth=1
 
 cd grafana
+
+# 安装yarn
+npm install -g yarn
+
+# 安装前端依赖
+yarn
 
 # 编译代码
 make build
 
 # 启动
-./bin/xxx/xxxxx
+./bin/linux-amd64/grafana-server
+```
+
+### 其他
+```
+# 前端
+yarn build
 ```
