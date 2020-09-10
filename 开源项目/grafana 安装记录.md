@@ -46,4 +46,20 @@ ln -s /usr/local/node-v6.2.0.tar.gz/node /usr/local/bin/node
 ln -s /usr/local/node-v6.2.0.tar.gz/npm /usr/local/bin/npm
 ln -s /usr/local/node-v6.2.0.tar.gz/node /usr/bin/node
 ln -s /usr/local/node-v6.2.0.tar.gz/npm /usr/bin/npm
+
+npm install yarn
+```
+
+## grafana
+
+```
+git clone https://github.com/stbui/grafana --depath=1
+
+cd grafana
+
+# 编译代码
+make build
+
+# 启动
+./bin/xxx/xxxxx
 ```
