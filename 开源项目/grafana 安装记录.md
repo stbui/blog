@@ -32,6 +32,9 @@ go version
 
 # 查看环境变量
 go env
+
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
 ```
 
 ## nodejs
