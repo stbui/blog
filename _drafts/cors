@@ -1,0 +1,25 @@
+# cors
+
+## 跨域问题排查
+
+1. 确认服务端对请求头的设置
+```
+// 允许所有网站跨域访问
+response.setHeader("Access-Control-Allow-Origin", "*");
+// 允许请求方法
+response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");
+// 身份凭证
+response.setHeader("Access-Control-Allow-Credentials", "true");
+// 这里如果前端请求header首字母是小写也是不行得,所以大小写都写上就没问题了
+response.setHeader("Access-Control-Allow-Headers", "access-control-allow-origin,content-type,x-requested-with,Content-Type,Access-Control-Allow-Headers,Content-Length,Accept,Authorization,X-Requested-With");
+        
+```
+2. ajax携带身份凭证
+
+当前访问的页面，在控制台上执行
+ ```
+ fetch("接口地址", {
+  "mode": "cors",
+  "credentials": "include"
+});
+```
