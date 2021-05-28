@@ -1,14 +1,50 @@
----
-title: nginx配置支持cors
-date: 2016-10-20 12:54:12
-tags:
----
-
-
 ```
-#
-# Wide-open CORS config for nginx
-#
+
+server {
+    listen 8080;
+
+    # 静态资源服务器
+    location /dist/ {
+        alias /www/static/;
+        add_header Cache-Control max-age=3600;
+        # autoindex on;
+    }
+
+    # 健康检查
+    location /health {
+        add_header Content-Type text/plain;
+        return 200 "ok";
+    }
+
+    # 后端系统接口代理
+    location ~* ^/api/ {
+        rewrite /api/(.*)$ /$1 break;
+        add_header Cache-Control no-store;
+        proxy_pass http://stbui.com;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    }
+
+
+    # 根路径
+    location / {
+        # 微前端
+        rewrite ^/(mpa|spa|test)/index.html$ /index.html break;
+
+        if ($request_filename ~* .*\.(html|htm)$) {
+            add_header Cache-Control no-cache;
+        }
+        
+        root /www/static/;
+        index index.html index.htm;
+        try_files $uri $uri/ /index.html;
+        # autoindex on;
+    }
+}
+```
+
+cors
+```
 location / {
      if ($request_method = 'OPTIONS') {
         add_header 'Access-Control-Allow-Origin' '*';
