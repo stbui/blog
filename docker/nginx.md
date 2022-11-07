@@ -50,3 +50,21 @@ docker run -d -p 80:80 -v /data:/usr/share/nginx/html nginx
 docker cp /root/stbui.stbui.com/nginx.conf ff0:/etc/nginx/conf.d/
 
 ```
+
+#### nginx.conf
+```
+server {
+    listen 8080;
+   
+    location / {
+      root /www/dist;
+      index index.html;
+      try_files $uri  /index.html;
+    }
+ 
+    location /health {
+      add_header Content-Type text/plain;
+      return 200 "ok";
+    }
+}
+```
