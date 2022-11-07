@@ -24,7 +24,7 @@ docker run -d -p 80:80 nginx
 
 #### 五、访问
 ```
-http://ip
+http://127.0.0.1
 ```
 
 
@@ -44,6 +44,8 @@ docker run -d -p 80:80 -v /data:/usr/share/nginx/html nginx
 // log
 /var/log/nginx
 ```
+
+#### 从宿主机复制到容器
 ```
 docker cp /root/stbui.stbui.com/nginx.conf ff0:/etc/nginx/conf.d/
 
